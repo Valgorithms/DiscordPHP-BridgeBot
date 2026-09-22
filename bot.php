@@ -106,7 +106,7 @@ if (TelegramConfig::isConfigured($environment)) {
 }
 
 if ($bot->connectors() === []) {
-    fwrite(STDERR, "No connectors are configured — there is nothing to bridge. See env.example.\n");
+    fwrite(STDERR, "No connectors are configured — there is nothing to bridge. See .env.example.\n");
 
     exit(1);
 }

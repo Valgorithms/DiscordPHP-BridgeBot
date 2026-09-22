@@ -23,9 +23,12 @@ bridges live in. Everything it does comes from three packages:
 
 ```bash
 composer install
-cp env.example .env    # then fill it in
+cp .env.example .env   # then fill it in
 php bot.php
 ```
+
+There is a start-to-finish walkthrough in [example.md](example.md) — the first
+run, both bridges, and what each failure actually looks like.
 
 A connector is installed **only when its credentials are in `.env`**, so filling
 in one section and leaving the other empty is a supported way to run: the bot
@@ -104,7 +107,7 @@ cp ../DiscordPHP-TwitchBot/storage/bridges.json storage/bridges.json
 ```
 
 **Your `.env` mostly carries over** — the Discord and Twitch keys are unchanged,
-and `TELEGRAM_TOKEN` joins them. See `env.example` for the full list.
+and `TELEGRAM_TOKEN` joins them. See `.env.example` for the full list.
 
 **The commands were renamed**, and the old ones are unregistered from Discord
 automatically on the first boot where every connector starts. Each connector's
