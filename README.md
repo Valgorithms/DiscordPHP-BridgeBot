@@ -133,6 +133,14 @@ composer phpacker
 Produces `bin/build/bot`. It is gitignored and export-ignored deliberately: the
 binary is decompilable and would carry whatever is in `.env` at build time.
 
+## Security
+
+Read [SECURITY-REVIEW.md](SECURITY-REVIEW.md) before adding the bot to a
+server you don't run. In short: whoever can run `link` in any server the bot is
+in can reach any Twitch channel or Telegram chat the bot can reach. So turn off
+**Public Bot** in the Discord developer portal, and only add the bot where you
+trust the admins.
+
 ## Licence
 
 MIT.
