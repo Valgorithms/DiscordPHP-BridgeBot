@@ -71,7 +71,9 @@ application `1548742142011121785`, in this order:
    with this on the bot would never join.
 5. **Bot → Message Content Intent:** on.
 6. **OAuth2 → Redirects:** add `https://www.valgorithms.com/discord.html`,
-   exactly, with `www.` and no query.
+   exactly, with `www.` and **without** the `?app=bridge`, then **Save
+   Changes**. If Discord answers the install with "Invalid OAuth2
+   redirect_uri", this line is missing or differs by a character.
 
 The bot reads these settings back when it connects and warns in the log if
 Public Bot or the code grant is on, or if the install page is not a
@@ -80,6 +82,13 @@ registered redirect.
 It asks for **View Channels, Send Messages, Embed Links, Attach Files, Read
 Message History** and **Manage Webhooks** (`536988672`), with `bot` and
 `applications.commands`.
+
+Steps 1–3 can be checked without logging in —
+`curl -s https://discord.com/api/v10/applications/1548742142011121785/rpc`
+should show the custom install link, `"bot_public": false`, and only a `"0"` key
+under `integration_types_config`. Other bots can be installed from the same
+page; the valgorithms.com README has the steps under *Adding another
+application*.
 
 ## Commands
 
