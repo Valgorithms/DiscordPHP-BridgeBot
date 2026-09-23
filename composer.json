@@ -22,8 +22,8 @@
     ],
     "require": {
         "php": "^8.4",
-        "discord-php/bridge": "@dev",
         "monolog/monolog": "^3.0",
+        "vzgcoders/discordphp-bridge": "@dev",
         "vzgcoders/discordphp-bridge-telegram": "@dev",
         "vzgcoders/discordphp-bridge-twitch": "@dev"
     },

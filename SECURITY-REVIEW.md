@@ -1,7 +1,7 @@
 # Security review
 
 **Scope:** the bridge as deployed from this repository — the core
-(`discord-php/bridge`, DiscordPHP-Bridge), the Twitch connector
+(`vzgcoders/discordphp-bridge`, DiscordPHP-Bridge), the Twitch connector
 (DiscordPHP-TwitchBot, branch `bridge`), the Telegram connector
 (DiscordPHP-TelegramRelay, branch `bridge`) and this app.
 **Date:** 2026-09-23.
