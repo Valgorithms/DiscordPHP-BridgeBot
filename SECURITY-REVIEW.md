@@ -134,6 +134,13 @@ Discord developer portal (the default), anyone can add it.
 
 Recommended: turn off Public Bot today; then either (1), or (2) plus (3).
 
+**Update:** the bot is now set up to be installed privately (Public Bot off,
+installed from a custom install page), and it warns in its log at startup if
+Public Bot is switched back on (`0e91e6f`). That closes "anyone can add it". It
+does not close the rest of S1: the admins of every server *you* add it to can
+still reach every room the bot can, so options 1–3 still apply as soon as it is
+in a server you don't run.
+
 ### S2 — Rank carries across networks · High
 
 Commands typed in one network's chat can act on the room of another network
@@ -389,7 +396,10 @@ channel. Tests: `TwitchGatewayTest`.
 ## Deployment checklist
 
 1. Developer portal → Bot → turn **Public Bot** off, so only you can add it to
-   a server.
+   a server. The install link becomes the custom page at
+   `https://www.valgorithms.com/discord.html?app=bridge`; the README's
+   *Installing it* lists every portal setting. The bot warns at startup if
+   Public Bot is back on.
 2. Put the bot only in servers whose admins you'd trust with every room it can
    reach (S1), and whose moderators you'd trust with Twitch moderation (S3).
 3. Only mod the Twitch account, or make the Telegram bot an admin, where you

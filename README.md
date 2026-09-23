@@ -47,6 +47,40 @@ a reason nothing tells you:
   With it on, the bot only sees messages addressed to it, so a Telegram group
   relays almost nothing.
 
+## Installing it
+
+The bot is installed privately: only you can add it to a server. That matters
+because whoever can run `link` in *any* server the bot is in can reach every
+Twitch channel and Telegram chat the bot can (see
+[SECURITY-REVIEW.md](SECURITY-REVIEW.md), S1).
+
+Its install link is <https://www.valgorithms.com/discord.html?app=bridge>. That
+page says what the bot asks for and why, then starts Discord's install with
+exactly those permissions. The page is built from the
+[valgorithms.com](https://github.com/valzargaming/valgorithms.com) repository.
+
+In the [Developer Portal](https://discord.com/developers/applications), for
+application `1548742142011121785`, in this order:
+
+1. **Installation → Installation Contexts:** Guild Install only.
+2. **Installation → Install Link:** Custom URL,
+   `https://www.valgorithms.com/discord.html?app=bridge`. Do this first:
+   Discord will not make a bot private while its install link is Discord's own.
+3. **Bot → Public Bot:** off.
+4. **Bot → Requires OAuth2 Code Grant:** off. Nothing exchanges the code, so
+   with this on the bot would never join.
+5. **Bot → Message Content Intent:** on.
+6. **OAuth2 → Redirects:** add `https://www.valgorithms.com/discord.html`,
+   exactly, with `www.` and no query.
+
+The bot reads these settings back when it connects and warns in the log if
+Public Bot or the code grant is on, or if the install page is not a
+registered redirect.
+
+It asks for **View Channels, Send Messages, Embed Links, Attach Files, Read
+Message History** and **Manage Webhooks** (`536988672`), with `bot` and
+`applications.commands`.
+
 ## Commands
 
 Everything is qualified by the network it belongs to — always, on every surface.
