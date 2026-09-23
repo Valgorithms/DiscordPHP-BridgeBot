@@ -66,20 +66,6 @@ $handler = new StreamHandler('php://stdout', Level::fromName($config->logLevel))
 $handler->setFormatter(new LineFormatter("[%datetime%] %level_name%: %message% %context%\n", 'H:i:s', true, true));
 $logger->pushHandler($handler);
 
-// Watch for that close and explain it. There is no event to listen for; the
-// library only ever reports the code by logging it, so this reads it back off
-// the record and prints the fix.
-$logger->pushProcessor(static function (LogRecord $record): LogRecord {
-    $op = GatewayDiagnostics::fromLogContext($record->message, $record->context);
-
-    if ($op !== null) {
-        // Straight to stderr rather than through the logger, which would
-        // re-enter this processor, and so that it is visible at any log level.
-        fwrite(STDERR, GatewayDiagnostics::report($op, (string) ($record->context['reason'] ?? '')));
-    }
-
-    return $record;
-});
 
 // One filesystem for the process: asynchronous where the host has ext-uv or
 // ext-eio, durable and blocking where it does not. Either way a save never
@@ -89,6 +75,36 @@ $store = new Store($config->storePath, Filesystem::create());
 // One Discord connection, and therefore one Discord\Http — which is where the
 // rate-limit buckets live. Nothing else in the process may hold one.
 $bot = new Bot($config, $store, ['logger' => $logger]);
+
+// Watch for that close and explain it. There is no event to listen for; the
+// library only ever reports the code by logging it, so this reads it back off
+// the record and prints the fix.
+//
+// Then leave. DiscordPHP does not reconnect after one of these — a bad token,
+// a missing intent — so the process would otherwise sit there with nothing
+// connected, looking alive to whatever supervises it. Exiting non-zero is what
+// lets a supervisor, or the person watching, see that it is not.
+//
+// The close code it saw, if any: an object, so the processor and the exit
+// below share it.
+$fatal = new ArrayObject();
+
+$logger->pushProcessor(static function (LogRecord $record) use ($bot, $fatal): LogRecord {
+    $op = GatewayDiagnostics::fromLogContext($record->message, $record->context);
+
+    if ($op !== null && $fatal->count() === 0) {
+        $fatal->append($op);
+
+        // Straight to stderr rather than through the logger, which would
+        // re-enter this processor, and so that it is visible at any log level.
+        fwrite(STDERR, GatewayDiagnostics::report($op, (string) ($record->context['reason'] ?? '')));
+
+        // Not from inside a log call: shutting down logs too.
+        $bot->getLoop()->futureTick(static fn () => $bot->shutdown());
+    }
+
+    return $record;
+});
 
 // A connector is installed only when the environment carries its credentials,
 // so a bot with only a Telegram token does not try to start a Twitch client and
@@ -162,3 +178,7 @@ if (PHP_OS_FAMILY === 'Windows' && function_exists('sapi_windows_set_ctrl_handle
 }
 
 $bot->run();
+
+// Only reached once the loop has stopped: a normal shutdown, or a close Discord
+// will not come back from (see the log processor above).
+exit($fatal->count() === 0 ? 0 : 1);
