@@ -25,7 +25,7 @@ repository until the open items are resolved or accepted.
 | S1 | **Critical**\* | Any server that has the bot can link *any* Twitch channel or Telegram chat, then read it, post into it and moderate it | Open: needs a decision |
 | S2 | **High** | Rank carries across networks: Telegram admins can moderate the Twitch channel, a Twitch broadcaster can ban in the Telegram group | Open: needs a decision |
 | S3 | **High** | Discord roles become moderator powers on Twitch and Telegram (Manage Messages → ban on Twitch) | Open: confirm intended |
-| S4 | Medium | Relayed chat is spoken by the bot's moderator account, so it bypasses the channel's own chat restrictions | Open: deployment choice |
+| S4 | Medium | Relayed chat is spoken by the host's own Twitch account — the broadcaster, in their channel — so it bypasses the channel's own chat restrictions | Accepted: hosts run it as their own account |
 | S5 | Medium | `link` does not check that the invoker can see the Discord channel being bridged out | Open: fix recommended |
 | S6 | Medium | Local accounts can read the `.env` tokens and modify the code the bot runs | Open: host change |
 | S7 | Medium | The Twitch operator is identified by login name, which can change hands | Open: fix recommended |
@@ -76,11 +76,13 @@ that fails falls to **Everyone**.
 What those commands can actually *do* depends on the bot's standing on the
 other network:
 
-- **Twitch `moderator:*` scopes** (the Moderator row) work in any channel where
-  the bot account is a moderator.
+- The bot runs as the **host's own Twitch account**; each host sets it up with
+  theirs.
+- **Twitch `moderator:*` scopes** (the Moderator row) work in the host's own
+  channel and in any channel where the host is a moderator.
 - **Twitch `channel:*` scopes** (`vip`, `mod`, `raid`, `commercial`, editing
-  the title) work only on the channel whose token the bot holds, or where it is
-  an editor.
+  the title) work only on the host's own channel, or where the host is an
+  editor.
 - **Telegram** `pin` and `ban` need the bot to be an admin in that chat.
   `send` and `poll` need only membership.
 
@@ -195,17 +197,20 @@ through the bot.
 anything that acts on another network; or add a setting that switches it off
 (e.g. `BRIDGE_REMOTE_MODERATION=off|admins|moderators`).
 
-### S4 — The bot's moderator status covers relayed text · Medium
+### S4 — Relayed chat is spoken as the host · Medium (accepted)
 
-If the bot account is a Twitch moderator — needed for every Moderator-row
-command — then everything relayed from Discord is spoken by a moderator.
-Moderators bypass the channel's slow mode, followers-only and subscriber-only
-modes, link filters and AutoMod. Anyone who can post in the linked Discord
-channel effectively posts with those exemptions.
+The bot runs as the host's own Twitch account. So in the host's channel,
+everything relayed from Discord and Telegram is spoken by the **broadcaster**,
+and in any channel where the host is a moderator, by a moderator. Both bypass
+the channel's slow mode, followers-only and subscriber-only modes, link filters
+and AutoMod. Anyone who can post in a linked Discord channel or a bridged
+Telegram group effectively posts with those exemptions. To viewers, each line
+comes from the host; only its `name:` prefix says who wrote it.
 
-**Options:** don't mod the relay account, and give up the Twitch moderation
-commands; or use two accounts, one that relays and one that moderates (needs
-connector work). At a minimum, document it.
+**Decision (2026-09-23):** accepted. Each host runs the bot as their own
+account, and a separate relay account is not planned. What limits it: moderate
+a linked Discord channel as you would the Twitch chat; relayed lines can never
+start with `/` or `.`; and a name that looks like a command is defused (F2).
 
 ### S5 — `link` doesn't check who can see the channel · Medium
 
@@ -250,6 +255,10 @@ refused in chat.)
 **Fix:** add `TWITCH_OWNER_ID`, compare it against the IRC `user-id` tag, and
 drop the login setting. Until then, leave `TWITCH_OWNER_LOGIN` empty unless
 you actually use `api` from Twitch chat.
+
+Because the bot runs as the host's own account, the host's id is already known:
+it is the `user_id` of the token, which the bot validates at startup. That could
+be the Twitch operator with no new setting at all.
 
 ### S8 — Re-authorization adopts whichever account approves · Low
 
@@ -353,6 +362,14 @@ spamming commands, could push every other channel's messages out of the
 backlog. Channels now take turns, and a full queue drops from the longest
 channel. Tests: `TwitchGatewayTest`.
 
+**F5 — The host's own Twitch chat was dropped · Bug · `982fb8d` (Twitch).**
+The gateway dropped every message from its own account, as an echo. Twitch
+never sends a connection its own messages, so the only thing it ever caught was
+the host typing in chat — whose messages then never reached Discord, and whose
+`!twitch` commands were ignored. It now drops a message from its own account
+only when it matches a line it sent to that channel in the last 30 seconds.
+Tests: `TwitchGatewayTest`.
+
 ### In the preceding review
 
 | Commit | Fix |
@@ -402,8 +419,9 @@ channel. Tests: `TwitchGatewayTest`.
    Public Bot is back on.
 2. Put the bot only in servers whose admins you'd trust with every room it can
    reach (S1), and whose moderators you'd trust with Twitch moderation (S3).
-3. Only mod the Twitch account, or make the Telegram bot an admin, where you
-   want the moderation commands to work (S1, S4).
+3. Run the bot as your own Twitch account (`TWITCH_NICK` is your login). It
+   can moderate wherever you can, and speaks as you (S4). Make the Telegram bot
+   an admin only where you want its moderation commands to work (S1).
 4. Set `DISCORD_OWNER_ID` and `TELEGRAM_OWNER_ID`. Leave `TWITCH_OWNER_LOGIN`
    empty unless you need `api` from Twitch chat (S7).
 5. Lock down the directories holding a `.env` (S6).

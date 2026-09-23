@@ -38,8 +38,8 @@ DISCORD_TOKEN=…
 DISCORD_OWNER_ID=…          # your Discord user id
 
 TWITCH_CLIENT_ID=…
-TWITCH_NICK=mybot           # the Twitch ACCOUNT the bot speaks as — its login, not the app's name
-TWITCH_ACCESS_TOKEN=…       # for that account: chat:read, chat:edit
+TWITCH_NICK=yourname        # YOUR Twitch login — the bot speaks as you, not as the app
+TWITCH_ACCESS_TOKEN=…       # for your account: chat:read, chat:edit
 TWITCH_REFRESH_TOKEN=…
 
 TELEGRAM_TOKEN=…            # from @BotFather
@@ -48,6 +48,13 @@ TELEGRAM_TOKEN=…            # from @BotFather
 Leave either network's section empty and the bot runs without it. That is a
 supported way to run, not a degraded one — it says which it skipped and carries
 on.
+
+Whoever hosts the bot runs it as **their own** Twitch account. The application
+in the Twitch developer console only supplies the client id; it is not an
+account and cannot chat. So on Twitch everything the bridge relays comes from
+your account, commands that change a channel (title, game, raids, VIPs) work on
+your own channel, and moderation works wherever you are a moderator. What you
+type in Twitch chat is relayed like anyone else's.
 
 ### The three that bite
 
@@ -77,8 +84,8 @@ Abridged, and annotated:
 
 ```
 [12:04:01] INFO: [bridge] starting with 2 connector(s): twitch, telegram
-[12:04:03] INFO: [twitch] chat connected as mybot
-[12:04:03] INFO: [twitch] ready as mybot; 0 bridge(s) configured, commands start with !
+[12:04:03] INFO: [twitch] chat connected as yourname
+[12:04:03] INFO: [twitch] ready as yourname; 0 bridge(s) configured, commands start with !
 [12:04:03] INFO: [telegram] polling as @MyBridgeBot; 0 bridge(s) configured, commands start with !
 [12:04:03] INFO: [slash] 3 command(s) over 53 action(s): 0 unchanged, 3 written
 [12:04:03] INFO: [slash] registered /bridge
@@ -149,8 +156,8 @@ The log confirms the join:
 [12:06:12] INFO: [bridge] twitch synced (+1 / -0), now following 1
 ```
 
-**Try it.** Say something in `#stream-chat`; it appears in Twitch chat as
-`yourname: hello`. Say something in Twitch chat; it appears in `#stream-chat`
+**Try it.** Say something in `#stream-chat`; it appears in Twitch chat, sent
+from your account, as `yourdiscordname: hello`. Say something in Twitch chat; it appears in `#stream-chat`
 under that person's Twitch name and avatar, with `(twitch)` after it so it is
 never mistaken for a Discord account.
 
