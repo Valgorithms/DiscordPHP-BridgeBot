@@ -78,13 +78,12 @@ Abridged, and annotated:
 ```
 [12:04:01] INFO: [bridge] starting with 2 connector(s): twitch, telegram
 [12:04:03] INFO: [twitch] chat connected as mybot
-[12:04:03] INFO: [twitch] ready as mybot; 0 bridge(s) configured
-[12:04:03] INFO: [telegram] polling; 0 bridge(s) configured
+[12:04:03] INFO: [twitch] ready as mybot; 0 bridge(s) configured, commands start with !
+[12:04:03] INFO: [telegram] polling as @MyBridgeBot; 0 bridge(s) configured, commands start with !
 [12:04:03] INFO: [slash] 3 command(s) over 53 action(s): 0 unchanged, 3 written
 [12:04:03] INFO: [slash] registered /bridge
 [12:04:03] INFO: [slash] registered /twitch
 [12:04:03] INFO: [slash] registered /telegram
-[12:04:03] INFO: [twitch] 40 command(s) over 3 group(s) registered in chat
 [12:04:03] INFO: [bridge] 53 action(s) across 2 connector(s)
 [12:04:03] INFO: [bridge] no bridges configured yet (storage/bridges.json)
 [12:04:03] INFO: [bridge] filesystem: synchronous (no ext-uv or ext-eio) — writes are
@@ -97,9 +96,10 @@ Three lines are worth reading rather than skimming:
   boot after this says `3 unchanged, 0 written`, because each definition is
   compared against what Discord already has. If you ever see a write you did not
   expect, something in the command tree changed.
-- **`40 command(s) … registered in chat`** — that is the *whole* catalogue in
-  Twitch chat, Telegram's included. The 13 that are missing are the ones only
-  Discord can serve.
+- **`commands start with !`** — once per chat network. Every chat is offered
+  the *whole* catalogue, the other network's included: `!telegram send hi` works
+  in Twitch chat. `!twitch` or `!telegram` on its own lists what can be run
+  there; the handful that are missing are the ones only Discord can serve.
 - **`filesystem: synchronous`** — on Windows without `ext-uv` there is no async
   backend, so the bot does the write itself and blocks *properly*: `fflush()`
   and `fsync()`. Roughly 3.5 ms per save. It says so at every start rather than
@@ -179,6 +179,18 @@ its numeric id from any relayed message.
 
 `#stream-chat` is now bridged to **both**. That is the point of keying bridges
 by connector: one Discord channel, one room per network, no collision.
+
+It is one conversation, not two that only Discord can see. Twitch chat reaches
+the Telegram group and Telegram reaches Twitch chat, each labelled with where it
+came from:
+
+```
+CoffeeFan (twitch): is the stream back?
+```
+
+The hop is made directly, from the original message. Discord cannot make it: its
+copy arrives through a webhook, and webhook messages are never relayed onward —
+that rule is what stops the bridge echoing itself forever.
 
 ---
 

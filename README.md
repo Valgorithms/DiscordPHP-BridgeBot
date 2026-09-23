@@ -70,10 +70,17 @@ Everything is qualified by the network it belongs to — always, on every surfac
 Each of those works four ways: as a Discord slash command, as a Discord prefix
 command, in Twitch chat, and in Telegram chat. `!twitch title Back in ten` typed
 in a Telegram group sets the stream title — which is the point of one bot rather
-than two.
+than two. The chat half is one dispatcher in the core, so rank, cooldowns and
+"which room did you mean" behave the same in every chat; a command typed in one
+network acts on the room of the other that shares a Discord channel with it, and
+refuses to guess when there is more than one.
 
-A chat drops the group and keeps the qualifier: `!twitch title`, not
-`!twitch channel title`, and never a bare `!title`. That is deliberate. A name
+The relay is the same: a Discord channel bridged to a Twitch channel *and* a
+Telegram group is one three-way conversation, with each network's messages
+carried straight to the other.
+
+A chat can drop the group but never the qualifier: `!twitch title` (the long
+`!twitch channel title` works too), and never a bare `!title`. That is deliberate. A name
 is only free because no connector has claimed it yet, and since every
 connector's commands are offered in every chat, an unqualified `!ban` is one
 installed package away from meaning two things — with no way for either to know.

@@ -15,9 +15,11 @@ namespace BridgeBot\Tests;
 
 use Bridge\Actions\BridgeActions;
 use Bridge\Actions\CoreActions;
+use Bridge\Bot;
 use Bridge\Capability\ProvidesActions;
 use Bridge\Command\ActionRegistry;
 use Bridge\Command\Surface;
+use Bridge\Config;
 use Bridge\Connector;
 use Bridge\Environment;
 use Bridge\Store;
@@ -27,6 +29,8 @@ use Bridge\Telegram\TelegramConnector;
 use Bridge\Twitch\TwitchConfig;
 use Bridge\Twitch\TwitchConnector;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\NullLogger;
+use React\EventLoop\StreamSelectLoop;
 
 /**
  * This is the only place both connectors exist at once, so it is the only place
@@ -149,6 +153,41 @@ final class WiringTest extends TestCase
         $this->assertSame(['twitch'], $store->connectors());
         $this->assertSame('coffeescrafts', $store->links('twitch')->targetFor('1549845016887951550'));
         $this->assertSame([], $store->warnings());
+
+        array_map('unlink', glob($dir . '/*') ?: []);
+        @rmdir($dir);
+    }
+
+    public function testTheBotAssemblesTheWayBotPhpBuildsIt(): void
+    {
+        // Every connector's `boot()` runs here — each builds its own client
+        // from the environment — so a client option one of them rejects fails
+        // this rather than the first real start. Nothing connects: the loop is
+        // never run.
+        $dir = sys_get_temp_dir() . '/bridgebot-' . bin2hex(random_bytes(6));
+        @mkdir($dir, 0o777, true);
+
+        $environment = Environment::fromArray([
+            'DISCORD_TOKEN' => 'test.token.here',
+            'TWITCH_CLIENT_ID' => 'cid',
+            'TWITCH_NICK' => 'bot',
+            'TELEGRAM_TOKEN' => '123:abc',
+            'TELEGRAM_PREFIX' => '?',
+        ], $dir . '/.env');
+
+        $config = Config::fromEnvironment($environment, $dir . '/bridges.json');
+        $bot = new Bot($config, new Store($config->storePath, Filesystem::blocking()), [
+            'logger' => new NullLogger(),
+            'loop' => new StreamSelectLoop(),
+        ]);
+
+        $bot->addConnector(new TwitchConnector(TwitchConfig::fromEnvironment($environment)));
+        $bot->addConnector(new TelegramConnector(TelegramConfig::fromEnvironment($environment)));
+
+        $this->assertSame(['twitch', 'telegram'], array_keys($bot->connectors()));
+        $this->assertSame($this->registry()->count(), $bot->getActions()->count());
+        $this->assertSame('?', $bot->connector('telegram')?->surface()->prefix);
+        $this->assertSame('!', $bot->connector('twitch')?->surface()->prefix);
 
         array_map('unlink', glob($dir . '/*') ?: []);
         @rmdir($dir);

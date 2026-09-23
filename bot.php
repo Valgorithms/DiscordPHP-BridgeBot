@@ -135,4 +135,30 @@ foreach ([\defined('SIGINT') ? SIGINT : null, \defined('SIGTERM') ? SIGTERM : nu
     }
 }
 
+// Windows has no signals, and no pcntl to catch them with; Ctrl-C and
+// Ctrl-Break arrive as console events instead. A second press while the first
+// is still shutting down leaves at once, so a hung network cannot hold the
+// console hostage.
+if (PHP_OS_FAMILY === 'Windows' && function_exists('sapi_windows_set_ctrl_handler')) {
+    $stopping = false;
+
+    // Only succeeds with a console attached; under a service manager there is
+    // nobody to press Ctrl-C, and the host's own stop is a kill regardless.
+    $handled = @sapi_windows_set_ctrl_handler(static function (int $event) use ($bot, &$stopping): void {
+        if ($stopping) {
+            exit(130);
+        }
+
+        $stopping = true;
+        $bot->shutdown();
+    });
+
+    if ($handled) {
+        // PHP runs the handler between operations, not inside a blocking
+        // select — so the loop is woken at least once a second to let it.
+        $bot->getLoop()->addPeriodicTimer(1.0, static function (): void {
+        });
+    }
+}
+
 $bot->run();
