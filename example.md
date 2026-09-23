@@ -337,7 +337,7 @@ seconds is far worse than telling them about it.
 | `!title` does nothing | It is `!twitch title`. Commands are always qualified. |
 | A command is missing from Discord's menu | A global command takes up to an hour to propagate on first registration. |
 | Twitch stops relaying after about four hours | No `TWITCH_CLIENT_SECRET`, so the token cannot be refreshed. Check your DMs for a `twitch.tv/activate` code. |
-| Telegram never connects, on Windows | No CA bundle. Set `TELEGRAM_CA_BUNDLE` to a `cacert.pem`. |
+| Telegram never connects, on Windows | No usable CA bundle. The `[telegram] verifying TLS …` line at startup says what was used; set `TELEGRAM_CA_BUNDLE` to a `cacert.pem`, or name one in php.ini as `openssl.cafile` or `curl.cainfo`. |
 
 Two failures are worth recognising by name, because the bot recovers from both
 and says so:
