@@ -19,6 +19,9 @@ bridges live in. Everything it does comes from three packages:
 | [`vzgcoders/discordphp-bridge-twitch`](https://github.com/Valgorithms/DiscordPHP-TwitchBot) | IRC, the whole Helix API, device-code recovery |
 | [`vzgcoders/discordphp-bridge-telegram`](https://github.com/Valgorithms/DiscordPHP-TelegramRelay) | the long poll, edits, media, panels |
 
+The class reference for all three is at
+<https://valgorithms.github.io/DiscordPHP-BridgeBot/>.
+
 ## Setup
 
 ```bash

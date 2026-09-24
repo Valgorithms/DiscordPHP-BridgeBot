@@ -13,6 +13,7 @@
         "async"
     ],
     "type": "project",
+    "homepage": "https://github.com/Valgorithms/DiscordPHP-BridgeBot",
     "license": "MIT",
     "authors": [
         {
@@ -20,8 +21,14 @@
             "email": "valithor@valgorithms.com"
         }
     ],
+    "support": {
+        "issues": "https://github.com/Valgorithms/DiscordPHP-BridgeBot/issues",
+        "source": "https://github.com/Valgorithms/DiscordPHP-BridgeBot",
+        "docs": "https://valgorithms.github.io/DiscordPHP-BridgeBot/"
+    },
     "require": {
         "php": "^8.4",
+        "discord-php/http": "dev-master as 10.1.7",
         "monolog/monolog": "^3.0",
         "vzgcoders/discordphp-bridge": "@dev",
         "vzgcoders/discordphp-bridge-telegram": "@dev",

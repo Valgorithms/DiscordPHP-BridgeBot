@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: PHP ${{ matrix.php }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        # Windows is where this bot is usually hosted, so it is tested there
+        # as well as on Linux.
+        os: [ubuntu-latest, windows-latest]
+        php: ['8.4', '8.5']
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring, zlib
+          coverage: none
+          tools: composer
+
+      # composer.json takes the bridge packages and their clients from sibling
+      # checkouts, as they sit locally. Clone them alongside so resolution
+      # matches local development instead of falling through to Packagist.
+      - name: Fetch sibling packages
+        shell: bash
+        run: |
+          for repo in \
+            discord-php/DiscordPHP-Bridge \
+            Valgorithms/DiscordPHP-TwitchBot \
+            Valgorithms/DiscordPHP-TelegramRelay \
+            Valgorithms/TwitchPHP \
+            Valgorithms/TwitchPHP-Http \
+            Valgorithms/TelegramPHP
+          do
+            git clone --depth 1 "https://github.com/$repo.git" "../${repo#*/}"
+          done
+
+      - name: Install dependencies
+        run: composer install --no-interaction --no-progress
+
+      - name: Lint
+        run: php -l bot.php
+
+      - name: PHPUnit
+        run: vendor/bin/phpunit
+
+      - name: Code style
+        if: matrix.os == 'ubuntu-latest' && matrix.php == '8.4'
+        run: vendor/bin/php-cs-fixer fix --dry-run --diff

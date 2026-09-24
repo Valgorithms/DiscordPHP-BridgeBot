@@ -11,4 +11,15 @@
             <directory>tests</directory>
         </testsuite>
     </testsuites>
+    <!--
+        This repository's own code. A deprecation raised inside vendor/ is that
+        package's to fix, and is not reported here: react/dns raises one on any
+        Windows without wmic, which includes GitHub's runners.
+    -->
+    <source ignoreIndirectDeprecations="true">
+        <include>
+            <file>bot.php</file>
+            <directory>tests</directory>
+        </include>
+    </source>
 </phpunit>

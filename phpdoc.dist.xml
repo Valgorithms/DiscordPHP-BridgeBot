@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdocumentor
+        configVersion="3"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="https://www.phpdoc.org"
+        xsi:noNamespaceSchemaLocation="https://docs.phpdoc.org/latest/phpdoc.xsd"
+>
+    <title>DiscordPHP-BridgeBot Documentation</title>
+    <paths>
+        <output>build</output>
+    </paths>
+    <version number="latest">
+        <!--
+            The application itself is bot.php. What it runs is the three bridge
+            packages, read from their sibling checkouts: the same ../ that the
+            path repositories in composer.json use, locally and in CI.
+        -->
+        <api>
+            <source dsn="..">
+                <path>DiscordPHP-Bridge/src</path>
+                <path>DiscordPHP-TwitchBot/src</path>
+                <path>DiscordPHP-TelegramRelay/src</path>
+            </source>
+            <output>reference</output>
+        </api>
+    </version>
+</phpdocumentor>
