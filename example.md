@@ -157,9 +157,16 @@ The log confirms the join:
 ```
 
 **Try it.** Say something in `#stream-chat`; it appears in Twitch chat, sent
-from your account, as `yourdiscordname: hello`. Say something in Twitch chat; it appears in `#stream-chat`
-under that person's Twitch name and avatar, with `(twitch)` after it so it is
-never mistaken for a Discord account.
+from your account, as `yourdiscordname (discord): hello`. Say something in
+Twitch chat; it appears in `#stream-chat` under that person's Twitch name and
+avatar, with `(twitch)` after it. Every relayed line names the network it came
+from, so nobody is mistaken for a member of the chat it lands in.
+
+The same goes for what a command posts on someone's behalf from another
+network: `/telegram chat send` from Discord arrives as
+`yourdiscordname (discord): …`, and a `/twitch moderation announce` typed in
+Discord or Telegram is prefixed with who sent it, since Twitch shows every
+announcement as yours.
 
 ---
 
