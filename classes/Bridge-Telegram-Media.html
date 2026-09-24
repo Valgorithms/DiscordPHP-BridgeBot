@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>DiscordPHP-BridgeBot Documentation</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">DiscordPHP-BridgeBot Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/bridge.html" class="">Bridge</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bridge-actions.html" class="">Actions</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-builders.html" class="">Builders</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-capability.html" class="">Capability</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-helpers.html" class="">Helpers</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-message.html" class="">Message</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-modules.html" class="">Modules</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-relay.html" class="">Relay</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-support.html" class="">Support</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-telegram.html" class="">Telegram</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-twitch.html" class="">Twitch</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -packages">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/bridge.html">Bridge</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/bridge-telegram.html">Telegram</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    Media
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
+                            </ul>
+        </div>
+    
+    
+    </h2>
+
+<div class="phpdocumentor-label-line">
+
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
+
+
+</div>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php"><a href="files/discordphp-telegramrelay-src-bridge-telegram-media.html"><abbr title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php">Media.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+
+    </aside>
+
+            <p class="phpdocumentor-summary">Works out what a Telegram message is carrying besides text, and whether the
+bridge can mirror it into Discord.</p>
+
+
+    <section class="phpdocumentor-description"><p>Operates on the plain array a <abbr title="\Telegram\Parts\Message">Message</abbr> serialises to
+rather than on the part itself, so every decision here — which of the nine
+media fields won, which photo size to take, what the thing should be called,
+whether it is small enough to re-upload — is testable without a client, a
+token, or a network.</p>
+<h2>Why files are re-uploaded rather than linked</h2>
+<p>A Telegram file has a public download URL, but it is
+<code class="prettyprint">https://api.telegram.org/file/bot&lt;TOKEN&gt;/&lt;path&gt;</code> — it contains the bot
+token. Posting one into Discord would hand the bot's full credentials to
+everyone who can read the channel, which is why the bridge downloads the
+bytes and attaches them instead, and why that URL is never logged.</p>
+</section>
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Bridge-Telegram-Media.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">author</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>Valithor Obsidion <a href="mailto:valithor@valgorithms.com">valithor@valgorithms.com</a></p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+    
+    
+<h3 id="toc">
+    Table of Contents
+    <a href="classes/Bridge-Telegram-Media.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h3>
+
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Bridge-Telegram-Media.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Telegram-Media.html#constant_DISCORD_UPLOAD_LIMIT">DISCORD_UPLOAD_LIMIT</a>
+    <span>
+        &nbsp;: mixed&nbsp;= 8 * 1024 * 1024                            </span>
+</dt>
+<dd>The largest file the bridge will re-upload to Discord.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Telegram-Media.html#constant_TELEGRAM_DOWNLOAD_LIMIT">TELEGRAM_DOWNLOAD_LIMIT</a>
+    <span>
+        &nbsp;: mixed&nbsp;= 20 * 1024 * 1024                            </span>
+</dt>
+<dd>The largest file `getFile` will serve from the cloud Bot API at all.</dd>
+
+    </dl>
+
+
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Bridge-Telegram-Media.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Telegram-Media.html#method_caption">caption()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+<dd>The caption that came with a media message, if any.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Telegram-Media.html#method_describe">describe()</a>
+    <span>
+                                &nbsp;: array{kind: string, label: string, file_id: ?string, size: ?int, filename: ?string, mirrorable: bool}|null    </span>
+</dt>
+<dd>What this message is carrying, or `null` when it is text only.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Telegram-Media.html#method_largestPhoto">largestPhoto()</a>
+    <span>
+                                &nbsp;: array&lt;string, mixed&gt;    </span>
+</dt>
+<dd>The largest of the photo sizes Telegram offers.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Telegram-Media.html#method_safeFilename">safeFilename()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Strips a Telegram-supplied filename down to something safe to hand to
+Discord as an attachment name — no directories, no control characters,
+and never empty.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Telegram-Media.html#method_entry">entry()</a>
+    <span>
+                                &nbsp;: array{kind: string, label: string, file_id: ?string, size: ?int, filename: ?string, mirrorable: bool}    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Telegram-Media.html#method_personName">personName()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>How a Telegram user is named in a service line.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Telegram-Media.html#method_service">service()</a>
+    <span>
+                                &nbsp;: array{kind: string, label: string, file_id: ?string, size: ?int, filename: ?string, mirrorable: bool}|null    </span>
+</dt>
+<dd>Telegram&#039;s service messages — somebody joined, the group was renamed, a
+message was pinned.</dd>
+
+    </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Bridge-Telegram-Media.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_DISCORD_UPLOAD_LIMIT">
+        DISCORD_UPLOAD_LIMIT
+        <a href="classes/Bridge-Telegram-Media.html#constant_DISCORD_UPLOAD_LIMIT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php"><a href="files/discordphp-telegramrelay-src-bridge-telegram-media.html"><abbr title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php">Media.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The largest file the bridge will re-upload to Discord.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">DISCORD_UPLOAD_LIMIT</span>
+    = <span class="phpdocumentor-signature__default-value">8 * 1024 * 1024</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><p>Discord's own limit is 10 MiB for a server without boosts, and a
+rejected upload costs a wasted download of the whole file first; 8 MiB
+keeps a margin for the multipart overhead and for the smaller effective
+limits some endpoints apply.</p>
+</section>
+
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TELEGRAM_DOWNLOAD_LIMIT">
+        TELEGRAM_DOWNLOAD_LIMIT
+        <a href="classes/Bridge-Telegram-Media.html#constant_TELEGRAM_DOWNLOAD_LIMIT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php"><a href="files/discordphp-telegramrelay-src-bridge-telegram-media.html"><abbr title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php">Media.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The largest file `getFile` will serve from the cloud Bot API at all.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">TELEGRAM_DOWNLOAD_LIMIT</span>
+    = <span class="phpdocumentor-signature__default-value">20 * 1024 * 1024</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><p>A local Bot API server has no such limit, but the bridge cannot tell
+from a message which one it is talking to, so it declines early rather
+than issuing a request it expects to fail.</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="constant_TELEGRAM_DOWNLOAD_LIMIT_tags">
+        Tags
+        <a href="classes/Bridge-Telegram-Media.html#constant_TELEGRAM_DOWNLOAD_LIMIT_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">link</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        <a class="phpdocumentor-tag-link" href="https://core.telegram.org/bots/api#getfile"> https://core.telegram.org/bots/api#getfile </a>
+                                    </dd>
+                        </dl>
+
+        
+    </article>
+            </section>
+
+        
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Bridge-Telegram-Media.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_caption">
+        caption()
+        <a href="classes/Bridge-Telegram-Media.html#method_caption" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php"><a href="files/discordphp-telegramrelay-src-bridge-telegram-media.html"><abbr title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php">Media.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">223</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The caption that came with a media message, if any.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">caption</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_describe">
+        describe()
+        <a href="classes/Bridge-Telegram-Media.html#method_describe" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php"><a href="files/discordphp-telegramrelay-src-bridge-telegram-media.html"><abbr title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php">Media.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">69</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">What this message is carrying, or `null` when it is text only.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">describe</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{kind: string, label: string, file_id: ?string, size: ?int, filename: ?string, mirrorable: bool}|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>The order matters: Telegram sets exactly one media field per message,
+but <code class="prettyprint">document</code> is also set alongside <code class="prettyprint">animation</code> for a GIF, so the more
+specific field has to win.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A serialised Telegram message.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array{kind: string, label: string, file_id: ?string, size: ?int, filename: ?string, mirrorable: bool}|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_largestPhoto">
+        largestPhoto()
+        <a href="classes/Bridge-Telegram-Media.html#method_largestPhoto" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php"><a href="files/discordphp-telegramrelay-src-bridge-telegram-media.html"><abbr title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php">Media.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">240</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The largest of the photo sizes Telegram offers.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">largestPhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, array&lt;string, mixed&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sizes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Telegram sends a message's photo as several resolutions of the same
+image; the last is normally the biggest, but that is convention rather
+than a guarantee, so this compares them.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$sizes</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, array&lt;string, mixed&gt;&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_safeFilename">
+        safeFilename()
+        <a href="classes/Bridge-Telegram-Media.html#method_safeFilename" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php"><a href="files/discordphp-telegramrelay-src-bridge-telegram-media.html"><abbr title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php">Media.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">265</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Strips a Telegram-supplied filename down to something safe to hand to
+Discord as an attachment name — no directories, no control characters,
+and never empty.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">safeFilename</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$name</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_entry">
+        entry()
+        <a href="classes/Bridge-Telegram-Media.html#method_entry" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php"><a href="files/discordphp-telegramrelay-src-bridge-telegram-media.html"><abbr title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php">Media.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">281</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">entry</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$kind</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$label</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fileId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$size</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{kind: string, label: string, file_id: ?string, size: ?int, filename: ?string, mirrorable: bool}</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$kind</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$label</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$fileId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$size</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$filename</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array{kind: string, label: string, file_id: ?string, size: ?int, filename: ?string, mirrorable: bool}</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_personName">
+        personName()
+        <a href="classes/Bridge-Telegram-Media.html#method_personName" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php"><a href="files/discordphp-telegramrelay-src-bridge-telegram-media.html"><abbr title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php">Media.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">205</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">How a Telegram user is named in a service line.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">personName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$user</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_service">
+        service()
+        <a href="classes/Bridge-Telegram-Media.html#method_service" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php"><a href="files/discordphp-telegramrelay-src-bridge-telegram-media.html"><abbr title="DiscordPHP-TelegramRelay/src/Bridge/Telegram/Media.php">Media.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">171</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Telegram&#039;s service messages — somebody joined, the group was renamed, a
+message was pinned.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">service</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{kind: string, label: string, file_id: ?string, size: ?int, filename: ?string, mirrorable: bool}|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>These arrive as an ordinary message with no text at all, so without this
+the bridge would drop them silently and a Discord reader would never
+learn that the group they are reading has changed under them.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array{kind: string, label: string, file_id: ?string, size: ?int, filename: ?string, mirrorable: bool}|null</span>
+            </section>
+
+</article>
+            </section>
+
+        
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Bridge-Telegram-Media.html#toc-constants">Constants</a></li>
+                                                                                <li><a href="classes/Bridge-Telegram-Media.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Bridge-Telegram-Media.html#constant_DISCORD_UPLOAD_LIMIT">DISCORD_UPLOAD_LIMIT</a></li>
+                                                    <li class=""><a href="classes/Bridge-Telegram-Media.html#constant_TELEGRAM_DOWNLOAD_LIMIT">TELEGRAM_DOWNLOAD_LIMIT</a></li>
+                                            </ul>
+                </li>
+            
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Bridge-Telegram-Media.html#method_caption">caption()</a></li>
+                                            <li class=""><a href="classes/Bridge-Telegram-Media.html#method_describe">describe()</a></li>
+                                            <li class=""><a href="classes/Bridge-Telegram-Media.html#method_largestPhoto">largestPhoto()</a></li>
+                                            <li class=""><a href="classes/Bridge-Telegram-Media.html#method_safeFilename">safeFilename()</a></li>
+                                            <li class=""><a href="classes/Bridge-Telegram-Media.html#method_entry">entry()</a></li>
+                                            <li class=""><a href="classes/Bridge-Telegram-Media.html#method_personName">personName()</a></li>
+                                            <li class=""><a href="classes/Bridge-Telegram-Media.html#method_service">service()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="classes/Bridge-Telegram-Media.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

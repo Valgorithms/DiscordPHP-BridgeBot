@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>DiscordPHP-BridgeBot Documentation</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">DiscordPHP-BridgeBot Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/bridge.html" class="">Bridge</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bridge-actions.html" class="">Actions</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-builders.html" class="">Builders</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-capability.html" class="">Capability</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-helpers.html" class="">Helpers</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-message.html" class="">Message</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-modules.html" class="">Modules</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-relay.html" class="">Relay</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-support.html" class="">Support</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-telegram.html" class="">Telegram</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-twitch.html" class="">Twitch</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -packages">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/bridge.html">Bridge</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    Store
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
+                            </ul>
+        </div>
+    
+    
+    </h2>
+
+<div class="phpdocumentor-label-line">
+
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
+
+
+</div>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+
+    </aside>
+
+            <p class="phpdocumentor-summary">Every bridge the bot has, for every connector, in one file.</p>
+
+
+    <section class="phpdocumentor-description"><p>This is the only thing that remembers what a server configured, so losing it
+means every admin has to run <code class="prettyprint">link</code> again. <a href="classes/Bridge-Support-JsonFile.html"><abbr title="\Bridge\Support\JsonFile">JsonFile</abbr></a> is what keeps that
+from happening — atomic writes, a backup beside it, a damaged file preserved
+rather than overwritten, and the write itself kept off the event loop. What
+this class adds on top is the shape: bridges are grouped by connector, so
+<code class="prettyprint">twitch</code> and <code class="prettyprint">telegram</code> cannot collide even when a guild bridges the same
+Discord channel name on both.</p>
+<pre class="prettyprint"><code class="language-json">{ &quot;version&quot;: 2,
+  &quot;links&quot;:  { &quot;twitch&quot;: { &quot;&lt;guild&gt;&quot;: { &quot;&lt;channel&gt;&quot;: &quot;coffeescrafts&quot; } } },
+  &quot;labels&quot;: { &quot;telegram&quot;: { &quot;-1001234567890&quot;: &quot;My Group&quot; } } }
+</code></pre>
+<p>A file written by the single-platform bots this one replaces has no
+<code class="prettyprint">version</code> and no connector level; it is migrated on load into whichever
+connector the caller names, so an existing installation keeps its bridges
+without anyone having to re-run anything.</p>
+<p>Entries of the wrong shape are dropped rather than loaded, and what was
+dropped is recorded in <abbr title="\Bridge\warnings()">warnings()</abbr> — a hand-edited file should not be
+able to take the bot down with a <code class="prettyprint">TypeError</code> three layers away, nor vanish
+silently.</p>
+<p>Every mutator hands back a fresh <a href="classes/Bridge-Links.html"><abbr title="\Bridge\Links">Links</abbr></a>, which is what callers act on:
+the store owns persistence, <a href="classes/Bridge-Links.html"><abbr title="\Bridge\Links">Links</abbr></a> owns routing.</p>
+</section>
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Bridge-Store.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">author</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>Valithor Obsidion <a href="mailto:valithor@discordphp.org">valithor@discordphp.org</a></p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+    
+    
+<h3 id="toc">
+    Table of Contents
+    <a href="classes/Bridge-Store.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h3>
+
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Bridge-Store.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Store.html#constant_LEGACY_TITLED">LEGACY_TITLED</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;telegram&#039;                            </span>
+</dt>
+<dd>Which connector a legacy file with a `titles` table belongs to.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Store.html#constant_VERSION">VERSION</a>
+    <span>
+        &nbsp;: mixed&nbsp;= 2                            </span>
+</dt>
+<dd>The shape this class writes. Anything older is migrated on load.</dd>
+
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Bridge-Store.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Store.html#property_data">$data</a>
+    <span>
+                        &nbsp;: array{version: int, links: array<string,array<string,array<string,string>>>, labels: array<string,array<string,string>>}            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Store.html#property_file">$file</a>
+    <span>
+                        &nbsp;: <a href="classes/Bridge-Support-JsonFile.html"><abbr title="\Bridge\Support\JsonFile">JsonFile</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Store.html#property_legacyConnector">$legacyConnector</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Store.html#property_migrated">$migrated</a>
+    <span>
+                        &nbsp;: bool            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Store.html#property_warnings">$warnings</a>
+    <span>
+                        &nbsp;: array&lt;int, string&gt;            </span>
+</dt>
+
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Bridge-Store.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Store.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Store.html#method_connectors">connectors()</a>
+    <span>
+                                &nbsp;: array&lt;int, string&gt;    </span>
+</dt>
+<dd>Every connector that has at least one bridge.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Store.html#method_count">count()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>How many bridges exist across every connector.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Store.html#method_filesystem">filesystem()</a>
+    <span>
+                                &nbsp;: <a href="classes/Bridge-Support-Filesystem.html"><abbr title="\Bridge\Support\Filesystem">Filesystem</abbr></a>    </span>
+</dt>
+<dd>The backend in use, for the startup line.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Store.html#method_flush">flush()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Writes now, blocking, for shutdown.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Store.html#method_forgetGuild">forgetGuild()</a>
+    <span>
+                                &nbsp;: <a href="classes/Bridge-Links.html"><abbr title="\Bridge\Links">Links</abbr></a>    </span>
+</dt>
+<dd>Drops every bridge a guild has configured for one connector.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Store.html#method_label">label()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+<dd>What a target is called, when the connector has told us.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Store.html#method_link">link()</a>
+    <span>
+                                &nbsp;: <a href="classes/Bridge-Links.html"><abbr title="\Bridge\Links">Links</abbr></a>    </span>
+</dt>
+<dd>Bridges a Discord channel to a target.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Store.html#method_links">links()</a>
+    <span>
+                                &nbsp;: <a href="classes/Bridge-Links.html"><abbr title="\Bridge\Links">Links</abbr></a>    </span>
+</dt>
+<dd>One connector&#039;s routing table. Empty for a connector with no bridges.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Store.html#method_migrated">migrated()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Whether the file on disk was written by an older version of the bot.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Store.html#method_path">path()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Store.html#method_rememberLabel">rememberLabel()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Remembers what a target is called, so a listing can show a name.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Store.html#method_saved">saved()</a>
+    <span>
+                                &nbsp;: <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>    </span>
+</dt>
+<dd>Resolves when everything changed so far has reached the disk.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Store.html#method_toArray">toArray()</a>
+    <span>
+                                &nbsp;: array&lt;string, mixed&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Store.html#method_unlink">unlink()</a>
+    <span>
+                                &nbsp;: <a href="classes/Bridge-Links.html"><abbr title="\Bridge\Links">Links</abbr></a>    </span>
+</dt>
+<dd>Removes one Discord channel&#039;s bridge. No-op when it was not bridged.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Store.html#method_warnings">warnings()</a>
+    <span>
+                                &nbsp;: array&lt;int, string&gt;    </span>
+</dt>
+<dd>Anything that went wrong while reading, in the order it was found. Empty
+on a normal start.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Store.html#method_forgetUnusedLabels">forgetUnusedLabels()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Forgets the name of a target nothing points at any more.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Store.html#method_keyedByGuild">keyedByGuild()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Whether a `links` table is keyed by Discord guild id — the legacy shape —
+rather than by connector name.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Store.html#method_prune">prune()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Drops a guild, and then a connector, once nothing is left under it.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Store.html#method_sanitize">sanitize()</a>
+    <span>
+                                &nbsp;: array{version: int, links: array<string,array<string,array<string,string>>>, labels: array<string,array<string,string>>}    </span>
+</dt>
+<dd>Brings whatever was on disk up to the current shape, dropping what cannot
+be understood and saying so.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Store.html#method_save">save()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+    </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Bridge-Store.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_LEGACY_TITLED">
+        LEGACY_TITLED
+        <a href="classes/Bridge-Store.html#constant_LEGACY_TITLED" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">65</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Which connector a legacy file with a `titles` table belongs to.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">LEGACY_TITLED</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;telegram&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><p>Only DiscordPHP-TelegramRelay ever wrote one, so its presence is how that
+bot's file is told apart from the Twitch bots'. Named here rather than
+guessed from the targets: a numeric Telegram chat id and an all-digit
+Twitch login look alike.</p>
+</section>
+
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_VERSION">
+        VERSION
+        <a href="classes/Bridge-Store.html#constant_VERSION" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">55</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The shape this class writes. Anything older is migrated on load.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">VERSION</span>
+    = <span class="phpdocumentor-signature__default-value">2</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+            </section>
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Bridge-Store.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_data">
+        $data
+        <a href="classes/Bridge-Store.html#property_data" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">70</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">array{version: int, links: array<string,array<string,array<string,string>>>, labels: array<string,array<string,string>>}</span>
+    <span class="phpdocumentor-signature__name">$data</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_file">
+        $file
+        <a href="classes/Bridge-Store.html#property_file" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">67</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Bridge-Support-JsonFile.html"><abbr title="\Bridge\Support\JsonFile">JsonFile</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$file</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_legacyConnector">
+        $legacyConnector
+        <a href="classes/Bridge-Store.html#property_legacyConnector" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">86</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$legacyConnector</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;twitch&#039;</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_migrated">
+        $migrated
+        <a href="classes/Bridge-Store.html#property_migrated" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">75</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$migrated</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_warnings">
+        $warnings
+        <a href="classes/Bridge-Store.html#property_warnings" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">array&lt;int, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$warnings</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Bridge-Store.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Bridge-Store.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">83</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Support-Filesystem.html"><abbr title="\Bridge\Support\Filesystem">Filesystem</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesystem</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$legacyConnector</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'twitch'</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$filesystem</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Support-Filesystem.html"><abbr title="\Bridge\Support\Filesystem">Filesystem</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$legacyConnector</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">'twitch'</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Which connector a pre-<code class="prettyprint">version</code> file's
+bridges belong to. The bots this replaces
+each had exactly one, so the file itself
+cannot say.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_connectors">
+        connectors()
+        <a href="classes/Bridge-Store.html#method_connectors" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">110</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Every connector that has at least one bridge.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">connectors</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Not the same as the connectors that are <em>registered</em>: a file may name one
+that is not installed any more, and those bridges are kept rather than
+quietly dropped.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_count">
+        count()
+        <a href="classes/Bridge-Store.html#method_count" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">119</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">How many bridges exist across every connector.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">count</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_filesystem">
+        filesystem()
+        <a href="classes/Bridge-Store.html#method_filesystem" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">165</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The backend in use, for the startup line.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">filesystem</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Support-Filesystem.html"><abbr title="\Bridge\Support\Filesystem">Filesystem</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Support-Filesystem.html"><abbr title="\Bridge\Support\Filesystem">Filesystem</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_flush">
+        flush()
+        <a href="classes/Bridge-Store.html#method_flush" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">266</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Writes now, blocking, for shutdown.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">flush</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Once the loop stops a queued write would never run, and the change
+somebody just made would be the one lost.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_forgetGuild">
+        forgetGuild()
+        <a href="classes/Bridge-Store.html#method_forgetGuild" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">218</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Drops every bridge a guild has configured for one connector.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">forgetGuild</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$guildId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Links.html"><abbr title="\Bridge\Links">Links</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$guildId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Links.html"><abbr title="\Bridge\Links">Links</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_label">
+        label()
+        <a href="classes/Bridge-Store.html#method_label" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">137</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">What a target is called, when the connector has told us.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">label</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$target</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>A Telegram chat id says nothing to a human, and the name has to come from
+an API call the bot may not be able to repeat — it is remembered so a
+listing does not have to go and ask.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$target</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_link">
+        link()
+        <a href="classes/Bridge-Store.html#method_link" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">184</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Bridges a Discord channel to a target.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">link</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$guildId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$discordChannelId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$target</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$label</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Links.html"><abbr title="\Bridge\Links">Links</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>A Discord channel points at one target per connector, so linking it again
+replaces the previous one rather than accumulating.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$guildId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$discordChannelId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$target</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$label</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Links.html"><abbr title="\Bridge\Links">Links</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_links">
+        links()
+        <a href="classes/Bridge-Store.html#method_links" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">96</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">One connector&#039;s routing table. Empty for a connector with no bridges.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">links</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Links.html"><abbr title="\Bridge\Links">Links</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Links.html"><abbr title="\Bridge\Links">Links</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_migrated">
+        migrated()
+        <a href="classes/Bridge-Store.html#method_migrated" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">143</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Whether the file on disk was written by an older version of the bot.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">migrated</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_path">
+        path()
+        <a href="classes/Bridge-Store.html#method_path" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">159</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">path</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_rememberLabel">
+        rememberLabel()
+        <a href="classes/Bridge-Store.html#method_rememberLabel" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">230</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Remembers what a target is called, so a listing can show a name.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">rememberLabel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$target</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$label</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$target</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$label</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_saved">
+        saved()
+        <a href="classes/Bridge-Store.html#method_saved" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">255</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Resolves when everything changed so far has reached the disk.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">saved</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>For tests and for anything that genuinely must not continue until the
+change is durable. Ordinary callers do not wait.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_toArray">
+        toArray()
+        <a href="classes/Bridge-Store.html#method_toArray" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">171</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_unlink">
+        unlink()
+        <a href="classes/Bridge-Store.html#method_unlink" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">203</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Removes one Discord channel&#039;s bridge. No-op when it was not bridged.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">unlink</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$guildId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$discordChannelId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Links.html"><abbr title="\Bridge\Links">Links</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$guildId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$discordChannelId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Links.html"><abbr title="\Bridge\Links">Links</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_warnings">
+        warnings()
+        <a href="classes/Bridge-Store.html#method_warnings" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">154</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Anything that went wrong while reading, in the order it was found. Empty
+on a normal start.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">warnings</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_forgetUnusedLabels">
+        forgetUnusedLabels()
+        <a href="classes/Bridge-Store.html#method_forgetUnusedLabels" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">297</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Forgets the name of a target nothing points at any more.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">forgetUnusedLabels</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Without this the file grows a label for every chat ever linked, and the
+names of rooms the bot has long since left outlive the bridges to them.</p>
+</section>
+
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_keyedByGuild">
+        keyedByGuild()
+        <a href="classes/Bridge-Store.html#method_keyedByGuild" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">320</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Whether a `links` table is keyed by Discord guild id — the legacy shape —
+rather than by connector name.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">keyedByGuild</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$links</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$links</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_prune">
+        prune()
+        <a href="classes/Bridge-Store.html#method_prune" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">280</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Drops a guild, and then a connector, once nothing is left under it.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">prune</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$guildId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$guildId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_sanitize">
+        sanitize()
+        <a href="classes/Bridge-Store.html#method_sanitize" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">338</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Brings whatever was on disk up to the current shape, dropping what cannot
+be understood and saying so.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">sanitize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{version: int, links: array<string,array<string,array<string,string>>>, labels: array<string,array<string,string>>}</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$data</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array{version: int, links: array<string,array<string,array<string,string>>>, labels: array<string,array<string,string>>}</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_save">
+        save()
+        <a href="classes/Bridge-Store.html#method_save" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Store.php"><a href="files/discordphp-bridge-src-bridge-store.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Store.php">Store.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">273</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">save</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+            </section>
+
+        
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Bridge-Store.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/Bridge-Store.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Bridge-Store.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Bridge-Store.html#constant_LEGACY_TITLED">LEGACY_TITLED</a></li>
+                                                    <li class=""><a href="classes/Bridge-Store.html#constant_VERSION">VERSION</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Bridge-Store.html#property_data">$data</a></li>
+                                                    <li class=""><a href="classes/Bridge-Store.html#property_file">$file</a></li>
+                                                    <li class=""><a href="classes/Bridge-Store.html#property_legacyConnector">$legacyConnector</a></li>
+                                                    <li class=""><a href="classes/Bridge-Store.html#property_migrated">$migrated</a></li>
+                                                    <li class=""><a href="classes/Bridge-Store.html#property_warnings">$warnings</a></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Bridge-Store.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_connectors">connectors()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_count">count()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_filesystem">filesystem()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_flush">flush()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_forgetGuild">forgetGuild()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_label">label()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_link">link()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_links">links()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_migrated">migrated()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_path">path()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_rememberLabel">rememberLabel()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_saved">saved()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_toArray">toArray()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_unlink">unlink()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_warnings">warnings()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_forgetUnusedLabels">forgetUnusedLabels()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_keyedByGuild">keyedByGuild()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_prune">prune()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_sanitize">sanitize()</a></li>
+                                            <li class=""><a href="classes/Bridge-Store.html#method_save">save()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="classes/Bridge-Store.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

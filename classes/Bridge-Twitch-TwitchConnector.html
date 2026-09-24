@@ -1,0 +1,2309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>DiscordPHP-BridgeBot Documentation</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">DiscordPHP-BridgeBot Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/bridge.html" class="">Bridge</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bridge-actions.html" class="">Actions</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-builders.html" class="">Builders</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-capability.html" class="">Capability</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-helpers.html" class="">Helpers</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-message.html" class="">Message</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-modules.html" class="">Modules</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-relay.html" class="">Relay</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-support.html" class="">Support</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-telegram.html" class="">Telegram</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-twitch.html" class="">Twitch</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -packages">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/bridge.html">Bridge</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/bridge-twitch.html">Twitch</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    TwitchConnector
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
+                            </ul>
+        </div>
+    
+            <span class="phpdocumentor-element__implements">
+            implements
+                            <a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a>,                             <a href="classes/Bridge-Capability-ProvidesActions.html"><abbr title="\Bridge\Capability\ProvidesActions">ProvidesActions</abbr></a>,                             <a href="classes/Bridge-Capability-Avatars.html"><abbr title="\Bridge\Capability\Avatars">Avatars</abbr></a>                    </span>
+    
+    </h2>
+
+<div class="phpdocumentor-label-line">
+
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
+
+
+</div>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+
+    </aside>
+
+            <p class="phpdocumentor-summary">Twitch, as far as the bridge is concerned.</p>
+
+
+    <section class="phpdocumentor-description"><p>Owns the TwitchPHP client, the IRC membership, the Helix dispatcher and the
+device-code recovery, and hands the core <a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a> messages and
+<a href="classes/Bridge-Room.html"><abbr title="\Bridge\Room">Room</abbr></a> descriptions like any other connector. Nothing above this knows
+what IRC is.</p>
+<p><code class="prettyprint">Twitch::run()</code> would call <code class="prettyprint">Loop::run()</code> itself, so the client is started
+through <code class="prettyprint">bootstrap()</code> and <code class="prettyprint">Discord::run()</code> is left to drive the loop.</p>
+</section>
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">author</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>Valithor Obsidion <a href="mailto:valithor@valgorithms.com">valithor@valgorithms.com</a></p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+    
+    
+<h3 id="toc">
+    Table of Contents
+    <a href="classes/Bridge-Twitch-TwitchConnector.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h3>
+
+
+
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a></dt><dd>One network the bot bridges Discord with.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Bridge-Capability-ProvidesActions.html"><abbr title="\Bridge\Capability\ProvidesActions">ProvidesActions</abbr></a></dt><dd>A connector that brings commands of its own.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Bridge-Capability-Avatars.html"><abbr title="\Bridge\Capability\Avatars">Avatars</abbr></a></dt><dd>A connector that can say what somebody looks like.</dd>    </dl>
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Bridge-Twitch-TwitchConnector.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#constant_NAME">NAME</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;twitch&#039;                            </span>
+</dt>
+<dd>The name this connector is addressed by, in the store and in chat.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#constant_SCOPES">SCOPES</a>
+    <span>
+        &nbsp;: array&lt;int, string&gt;&nbsp;= [ // Reading and speaking in chat: the relay, a...                            </span>
+</dt>
+<dd>Exactly the scopes the built-in commands need — no more.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -private">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#constant_USER_CACHE">USER_CACHE</a>
+    <span>
+        &nbsp;: mixed&nbsp;= 1000                            </span>
+</dt>
+<dd>How many user rows to keep. Every new chatter is one, for their avatar.</dd>
+
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Bridge-Twitch-TwitchConnector.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#property_adapter">$adapter</a>
+    <span>
+                        &nbsp;: <a href="classes/Bridge-Twitch-TwitchAdapter.html"><abbr title="\Bridge\Twitch\TwitchAdapter">TwitchAdapter</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#property_bot">$bot</a>
+    <span>
+                        &nbsp;: <a href="classes/Bridge-Bot.html"><abbr title="\Bridge\Bot">Bot</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#property_config">$config</a>
+    <span>
+                        &nbsp;: <a href="classes/Bridge-Twitch-TwitchConfig.html"><abbr title="\Bridge\Twitch\TwitchConfig">TwitchConfig</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#property_dispatcher">$dispatcher</a>
+    <span>
+                        &nbsp;: <a href="classes/Bridge-Twitch-Api-RepositoryDispatcher.html"><abbr title="\Bridge\Twitch\Api\RepositoryDispatcher">RepositoryDispatcher</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#property_gateway">$gateway</a>
+    <span>
+                        &nbsp;: <a href="classes/Bridge-Twitch-TwitchGateway.html"><abbr title="\Bridge\Twitch\TwitchGateway">TwitchGateway</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#property_handlers">$handlers</a>
+    <span>
+                        &nbsp;: array&lt;int, callable(<a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a>): void&gt;            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#property_pending">$pending</a>
+    <span>
+                        &nbsp;: array&lt;string, <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, array{id: string, login: string, display_name: string, description: string, avatar: string}|null&gt;&gt;            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#property_twitch">$twitch</a>
+    <span>
+                        &nbsp;: <abbr title="\Twitch\Twitch">Twitch</abbr>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#property_users">$users</a>
+    <span>
+                        &nbsp;: array&lt;string, array{id: string, login: string, display_name: string, description: string, avatar: string}|null&gt;            </span>
+</dt>
+
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Bridge-Twitch-TwitchConnector.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_actions">actions()</a>
+    <span>
+                                &nbsp;: array&lt;int, <a href="classes/Bridge-Command-Action.html"><abbr title="\Bridge\Command\Action">Action</abbr></a>&gt;    </span>
+</dt>
+<dd>Every command this connector defines.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_avatarFor">avatarFor()</a>
+    <span>
+                                &nbsp;: <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, string|null&gt;    </span>
+</dt>
+<dd>A chatter&#039;s profile picture, for the Discord copy of what they said.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_boot">boot()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Builds the client and registers everything that must exist before the
+first message arrives. Called once, when the connector is added.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_getConfig">getConfig()</a>
+    <span>
+                                &nbsp;: <a href="classes/Bridge-Twitch-TwitchConfig.html"><abbr title="\Bridge\Twitch\TwitchConfig">TwitchConfig</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_getDispatcher">getDispatcher()</a>
+    <span>
+                                &nbsp;: <a href="classes/Bridge-Twitch-Api-RepositoryDispatcher.html"><abbr title="\Bridge\Twitch\Api\RepositoryDispatcher">RepositoryDispatcher</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_getTwitch">getTwitch()</a>
+    <span>
+                                &nbsp;: <abbr title="\Twitch\Twitch">Twitch</abbr>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_joined">joined()</a>
+    <span>
+                                &nbsp;: array&lt;int, string&gt;    </span>
+</dt>
+<dd>Every room the connector is currently in.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_label">label()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>What to call the network in front of a human: `Twitch`, `Telegram`.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_lookupUser">lookupUser()</a>
+    <span>
+                                &nbsp;: <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, array{id: string, login: string, display_name: string, description: string, avatar: string}|null&gt;    </span>
+</dt>
+<dd>One Helix user row by login, cached — including a user that does not
+exist, so a typo is not re-queried on every relayed message.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_name">name()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>A short, lowercase, stable name — `twitch`, `telegram`.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_normalise">normalise()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+<dd>Turns however somebody referred to a room into the form this connector
+addresses it by, or `null` when it is not a room reference at all.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_onIncoming">onIncoming()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Registers the handler every inbound message is passed to.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_queued">queued()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>How many outbound messages are waiting on this connector&#039;s own pacing.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_relay">relay()</a>
+    <span>
+                                &nbsp;: <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, string|null&gt;    </span>
+</dt>
+<dd>Renders a Discord message for this network and says it.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_resolve">resolve()</a>
+    <span>
+                                &nbsp;: <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, <a href="classes/Bridge-Room.html"><abbr title="\Bridge\Room">Room</abbr></a>|null&gt;    </span>
+</dt>
+<dd>Looks a channel up by login.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_send">send()</a>
+    <span>
+                                &nbsp;: <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>    </span>
+</dt>
+<dd>Says something in a room, exactly as given.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_start">start()</a>
+    <span>
+                                &nbsp;: <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Connects, and starts answering commands in chat.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_stop">stop()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Disconnects cleanly, for shutdown.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_surface">surface()</a>
+    <span>
+                                &nbsp;: <a href="classes/Bridge-Command-Surface.html"><abbr title="\Bridge\Command\Surface">Surface</abbr></a>    </span>
+</dt>
+<dd>Twitch chat takes 500 characters of flat text on a single line.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_sync">sync()</a>
+    <span>
+                                &nbsp;: array{join: list<string>, part: list<string>}    </span>
+</dt>
+<dd>Joins and leaves whatever the routing table now says, and reports what it
+did.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_dispatch">dispatch()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Turns a TwitchPHP chat message into the core&#039;s own shape.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_promptForDeviceCode">promptForDeviceCode()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_reauthorizer">reauthorizer()</a>
+    <span>
+                                &nbsp;: <abbr title="\Twitch\Auth\DeviceCodeReauthorizer">DeviceCodeReauthorizer</abbr>    </span>
+</dt>
+<dd>The device-code reauthorizer, and the prompt that reaches a human.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_warnIfCannotRefresh">warnIfCannotRefresh()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Twitch-TwitchConnector.html#method_warnIfTokenIsSomeoneElse">warnIfTokenIsSomeoneElse()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Says so when the token belongs to a different account than TWITCH_NICK.</dd>
+
+    </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Bridge-Twitch-TwitchConnector.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NAME">
+        NAME
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#constant_NAME" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">55</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The name this connector is addressed by, in the store and in chat.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">NAME</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;twitch&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SCOPES">
+        SCOPES
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#constant_SCOPES" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">87</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Exactly the scopes the built-in commands need — no more.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">array&lt;int, string&gt;</span>
+    <span class="phpdocumentor-signature__name">SCOPES</span>
+    = <span class="phpdocumentor-signature__default-value">[
+    // Reading and speaking in chat: the relay, and every command reply.
+    &#039;chat:read&#039;,
+    &#039;chat:edit&#039;,
+    // `title`, `game`, `tags`, and `marker`.
+    &#039;channel:manage:broadcast&#039;,
+    // `followers`.
+    &#039;moderator:read:followers&#039;,
+    // `clip`.
+    &#039;clips:edit&#039;,
+    // `ban`, `unban`, `timeout`.
+    &#039;moderator:manage:banned_users&#039;,
+    // `clear`.
+    &#039;moderator:manage:chat_messages&#039;,
+    // `announce`.
+    &#039;moderator:manage:announcements&#039;,
+    // `shoutout`.
+    &#039;moderator:manage:shoutouts&#039;,
+    // `slow`, `subonly`, `emoteonly`, `followersonly`.
+    &#039;moderator:manage:chat_settings&#039;,
+    // `vip`, `unvip`.
+    &#039;channel:manage:vips&#039;,
+    // `mod`, `unmod`.
+    &#039;channel:manage:moderators&#039;,
+    // `raid`, `unraid`.
+    &#039;channel:manage:raids&#039;,
+    // `commercial`.
+    &#039;channel:edit:commercial&#039;,
+]</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><p>Each line names what stops working without it. Nothing is requested
+speculatively: every extra scope makes the consent screen longer and
+scarier, and grants the bot authority it has no code to use.</p>
+<p>Two families, and the difference decides what the bot can act on:</p>
+<ul>
+<li><code class="prettyprint">channel:*</code> requires the token to belong to the <strong>broadcaster</strong>, or to
+an account they have added as a channel editor. These only ever work on
+the channel that authorized the bot.</li>
+<li><code class="prettyprint">moderator:*</code> works on any channel where the bot account is a
+<strong>moderator</strong>, which is what lets one bot moderate many channels.</li>
+</ul>
+<p>So <code class="prettyprint">title</code>, <code class="prettyprint">vip</code>, <code class="prettyprint">mod</code>, <code class="prettyprint">raid</code> and <code class="prettyprint">commercial</code> act on the authorizing
+account's own channel, while <code class="prettyprint">ban</code>, <code class="prettyprint">timeout</code>, <code class="prettyprint">clear</code>, <code class="prettyprint">announce</code> and
+the chat modes work anywhere the bot is modded.</p>
+<p><a href="classes/Bridge-Twitch-Actions-ApiActions.html"><abbr title="\Bridge\Twitch\Actions\ApiActions">ApiActions</abbr></a> can reach endpoints beyond this list. That is
+deliberate and not a reason to widen it: an uncovered call fails with a
+<abbr title="\Twitch\Http\Exceptions\MissingScopeException">MissingScopeException</abbr> naming the scope it
+wanted, which is a better outcome than holding every permission on the
+chance somebody types one.</p>
+<p>Verified against the Twitch OpenAPI description rather than the docs
+pages. <a href="https://github.com/DmitryScaletta/twitch-api-swagger"></a></p>
+</section>
+
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -private ">
+    <h4 class="phpdocumentor-element__name" id="constant_USER_CACHE">
+        USER_CACHE
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#constant_USER_CACHE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">138</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">How many user rows to keep. Every new chatter is one, for their avatar.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">USER_CACHE</span>
+    = <span class="phpdocumentor-signature__default-value">1000</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+            </section>
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Bridge-Twitch-TwitchConnector.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_adapter">
+        $adapter
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#property_adapter" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">140</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Bridge-Twitch-TwitchAdapter.html"><abbr title="\Bridge\Twitch\TwitchAdapter">TwitchAdapter</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$adapter</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_bot">
+        $bot
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#property_bot" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">129</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Bridge-Bot.html"><abbr title="\Bridge\Bot">Bot</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$bot</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_config">
+        $config
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#property_config" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">151</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Bridge-Twitch-TwitchConfig.html"><abbr title="\Bridge\Twitch\TwitchConfig">TwitchConfig</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$config</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_dispatcher">
+        $dispatcher
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#property_dispatcher" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">133</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Bridge-Twitch-Api-RepositoryDispatcher.html"><abbr title="\Bridge\Twitch\Api\RepositoryDispatcher">RepositoryDispatcher</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$dispatcher</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_gateway">
+        $gateway
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#property_gateway" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">135</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Bridge-Twitch-TwitchGateway.html"><abbr title="\Bridge\Twitch\TwitchGateway">TwitchGateway</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$gateway</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_handlers">
+        $handlers
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#property_handlers" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">143</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">array&lt;int, callable(<a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a>): void&gt;</span>
+    <span class="phpdocumentor-signature__name">$handlers</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_pending">
+        $pending
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#property_pending" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">149</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">array&lt;string, <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, array{id: string, login: string, display_name: string, description: string, avatar: string}|null&gt;&gt;</span>
+    <span class="phpdocumentor-signature__name">$pending</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+        <section class="phpdocumentor-description"><p>Lookups in flight, so a burst from one chatter is one request.</p>
+</section>
+
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_twitch">
+        $twitch
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#property_twitch" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">131</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><abbr title="\Twitch\Twitch">Twitch</abbr></span>
+    <span class="phpdocumentor-signature__name">$twitch</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_users">
+        $users
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#property_users" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">146</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">array&lt;string, array{id: string, login: string, display_name: string, description: string, avatar: string}|null&gt;</span>
+    <span class="phpdocumentor-signature__name">$users</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+        <section class="phpdocumentor-description"><p>login =&gt; cached user row, negatives included.</p>
+</section>
+
+    
+
+        
+        
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Bridge-Twitch-TwitchConnector.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">151</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Twitch-TwitchConfig.html"><abbr title="\Bridge\Twitch\TwitchConfig">TwitchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$config</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Twitch-TwitchConfig.html"><abbr title="\Bridge\Twitch\TwitchConfig">TwitchConfig</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_actions">
+        actions()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_actions" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">408</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Every command this connector defines.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">actions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Bridge-Command-Action.html"><abbr title="\Bridge\Command\Action">Action</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Bridge-Command-Action.html"><abbr title="\Bridge\Command\Action">Action</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_avatarFor">
+        avatarFor()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_avatarFor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">366</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A chatter&#039;s profile picture, for the Discord copy of what they said.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">avatarFor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, string|null&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Helix's <code class="prettyprint">profile_image_url</code> is a public CDN link with nothing secret in
+it. Never rejects: a missing avatar is not worth losing the message over.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, string|null&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_boot">
+        boot()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_boot" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">195</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Builds the client and registers everything that must exist before the
+first message arrives. Called once, when the connector is added.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">boot</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Bot.html"><abbr title="\Bridge\Bot">Bot</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bot</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$bot</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Bot.html"><abbr title="\Bridge\Bot">Bot</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getConfig">
+        getConfig()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_getConfig" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">188</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getConfig</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Twitch-TwitchConfig.html"><abbr title="\Bridge\Twitch\TwitchConfig">TwitchConfig</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Twitch-TwitchConfig.html"><abbr title="\Bridge\Twitch\TwitchConfig">TwitchConfig</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getDispatcher">
+        getDispatcher()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_getDispatcher" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">183</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getDispatcher</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Twitch-Api-RepositoryDispatcher.html"><abbr title="\Bridge\Twitch\Api\RepositoryDispatcher">RepositoryDispatcher</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Twitch-Api-RepositoryDispatcher.html"><abbr title="\Bridge\Twitch\Api\RepositoryDispatcher">RepositoryDispatcher</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getTwitch">
+        getTwitch()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_getTwitch" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">178</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getTwitch</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Twitch\Twitch">Twitch</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Twitch\Twitch">Twitch</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_joined">
+        joined()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_joined" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">269</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Every room the connector is currently in.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">joined</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>The startup check compares this against what was restored from disk: a
+join that silently failed leaves a bridge that works in one direction
+only, which is invisible from the configuration alone.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_label">
+        label()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_label" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">162</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">What to call the network in front of a human: `Twitch`, `Telegram`.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">label</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_lookupUser">
+        lookupUser()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_lookupUser" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">317</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">One Helix user row by login, cached — including a user that does not
+exist, so a typo is not re-queried on every relayed message.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">lookupUser</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$login</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, array{id: string, login: string, display_name: string, description: string, avatar: string}|null&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Resolves <code class="prettyprint">null</code> only when Twitch says there is no such user. A lookup
+that <em>failed</em> rejects: it is not proof of absence, and a moderation
+command must not treat it as one.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$login</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, array{id: string, login: string, display_name: string, description: string, avatar: string}|null&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_name">
+        name()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_name" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">157</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A short, lowercase, stable name — `twitch`, `telegram`.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">name</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>It is not only a label. It keys this connector's bridges in <a href="classes/Bridge-Store.html"><abbr title="\Bridge\Store">Store</abbr></a>,
+and it is the top-level slash command the connector publishes, so
+changing it strands both.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_normalise">
+        normalise()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_normalise" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">279</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Turns however somebody referred to a room into the form this connector
+addresses it by, or `null` when it is not a room reference at all.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">normalise</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p><code class="prettyprint">twitch.tv/Foo</code> and <code class="prettyprint">#Foo</code> are both <code class="prettyprint">foo</code>; <code class="prettyprint">t.me/name</code> is <code class="prettyprint">@name</code>. The
+result is what gets stored, so it must be stable — normalising one way on
+Monday and another on Tuesday orphans every bridge made before the change.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$input</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_onIncoming">
+        onIncoming()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_onIncoming" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">402</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Registers the handler every inbound message is passed to.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">onIncoming</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$handler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>The connector is responsible for setting <a href="classes/Bridge-Message-Incoming.html#property_own"><abbr title="\Bridge\Message\Incoming::$own">Incoming::$own</abbr></a> on
+anything the bot itself said. A bridge that repeats its own output is an
+infinite loop that gets the account banned from both networks within
+minutes, and only the connector can recognise its own voice.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$handler</span>
+                : <span class="phpdocumentor-argument-list__argument__type">callable</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_queued">
+        queued()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_queued" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">274</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">How many outbound messages are waiting on this connector&#039;s own pacing.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">queued</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_relay">
+        relay()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_relay" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">395</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Renders a Discord message for this network and says it.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">relay</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$target</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Outgoing.html"><abbr title="\Bridge\Message\Outgoing">Outgoing</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, string|null&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>The rendering is the connector's because the answer is: IRC cannot carry
+a newline, Telegram's HTML mode needs exactly three characters escaped,
+and the limits are 500 and 4096. <a href="classes/Bridge-Support-MessageText.html"><abbr title="\Bridge\Support\MessageText">MessageText</abbr></a> holds
+the parts that are the same everywhere — resolving mentions, budgeting
+attachment links, truncating on a character boundary — so a connector
+writes only what is genuinely its own.</p>
+<p>Resolves to <code class="prettyprint">null</code> when there was nothing worth relaying, which is not a
+failure: an embed-only message says nothing a chat can repeat.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$target</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Outgoing.html"><abbr title="\Bridge\Message\Outgoing">Outgoing</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, string|null&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The id of what was said, when the network has them.</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_resolve">
+        resolve()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_resolve" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">294</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Looks a channel up by login.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">resolve</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$target</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, <a href="classes/Bridge-Room.html"><abbr title="\Bridge\Room">Room</abbr></a>|null&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>The room is keyed by login — what IRC joins and what the store has held
+since the single-platform bot — and carries the Helix user id as its
+<a href="classes/Bridge-Room.html#method_apiId"><abbr title="\Bridge\Room::apiId()">Room::apiId()</abbr></a>, which is what every Helix call wants as
+<code class="prettyprint">broadcaster_id</code>.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$target</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, <a href="classes/Bridge-Room.html"><abbr title="\Bridge\Room">Room</abbr></a>|null&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_send">
+        send()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_send" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">382</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Says something in a room, exactly as given.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">send</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$target</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>For text this bot composed itself — a command's reply, a notice. Relayed
+chat goes through <abbr title="\Bridge\relay()">relay()</abbr> instead, which is the one that still has
+to be rendered.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$target</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$text</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$options</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Connector-specific extras — a reply target,
+a file to attach. Unknown keys are ignored.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_start">
+        start()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_start" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">228</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Connects, and starts answering commands in chat.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">start</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p><code class="prettyprint">bootstrap()</code> resolves once the token is usable and IRC is up; anything
+that needs a live client happens inside it. A rejection is handed back
+to the core, which reports this connector as down without taking the
+others with it.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_stop">
+        stop()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_stop" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">257</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Disconnects cleanly, for shutdown.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">stop</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_surface">
+        surface()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_surface" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">173</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Twitch chat takes 500 characters of flat text on a single line.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">surface</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Command-Surface.html"><abbr title="\Bridge\Command\Surface">Surface</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p><code class="prettyprint">lines: false</code> is not a stylistic note — a newline in a <code class="prettyprint">PRIVMSG</code> is an
+IRC injection, so the core must never assume one can be sent.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Command-Surface.html"><abbr title="\Bridge\Command\Surface">Surface</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_sync">
+        sync()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_sync" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">264</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Joins and leaves whatever the routing table now says, and reports what it
+did.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">sync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Links.html"><abbr title="\Bridge\Links">Links</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$links</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{join: list<string>, part: list<string>}</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>A diff rather than &quot;rejoin everything&quot;, so one server's change does not
+blink every other server's bridge offline.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$links</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Links.html"><abbr title="\Bridge\Links">Links</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array{join: list<string>, part: list<string>}</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_dispatch">
+        dispatch()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_dispatch" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">428</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Turns a TwitchPHP chat message into the core&#039;s own shape.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">dispatch</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Twitch\Parts\ChatMessage">ChatMessage</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>The gateway has already dropped the bridge's own lines, so everything
+that reaches here was typed by a person — the host included, since the
+bot speaks as the host's account. Their messages are relayed and their
+commands answered like anyone else's, at the rank Twitch gives them.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Twitch\Parts\ChatMessage">ChatMessage</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_promptForDeviceCode">
+        promptForDeviceCode()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_promptForDeviceCode" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">517</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">promptForDeviceCode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$device</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$device</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_reauthorizer">
+        reauthorizer()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_reauthorizer" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">500</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The device-code reauthorizer, and the prompt that reaches a human.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">reauthorizer</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Twitch\Auth\DeviceCodeReauthorizer">DeviceCodeReauthorizer</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Device-code is the one grant <code class="prettyprint">OAuth::form()</code> allows without a client
+secret, so this is the only route back to a working token when none is
+configured.</p>
+<p>The prompt goes two places: the log, always, and a DM to the bot's owner
+when one is set. A bot that needs re-authorization and only whispers it
+into a logfile stays down until somebody looks.</p>
+</section>
+
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Twitch\Auth\DeviceCodeReauthorizer">DeviceCodeReauthorizer</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_warnIfCannotRefresh">
+        warnIfCannotRefresh()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_warnIfCannotRefresh" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">448</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">warnIfCannotRefresh</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_warnIfTokenIsSomeoneElse">
+        warnIfTokenIsSomeoneElse()
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#method_warnIfTokenIsSomeoneElse" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php"><a href="files/discordphp-twitchbot-src-bridge-twitch-twitchconnector.html"><abbr title="DiscordPHP-TwitchBot/src/Bridge/Twitch/TwitchConnector.php">TwitchConnector.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">471</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Says so when the token belongs to a different account than TWITCH_NICK.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">warnIfTokenIsSomeoneElse</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Twitch sends chat as whoever the token belongs to, whatever nick the
+connection claims — so a token approved while logged in as the streamer
+makes the relay speak as the streamer. Nothing fails, which is what makes
+it worth saying: the first sign is a relayed message under the wrong name.</p>
+</section>
+
+    
+    
+
+        
+    
+    
+</article>
+            </section>
+
+        
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Bridge-Twitch-TwitchConnector.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/Bridge-Twitch-TwitchConnector.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Bridge-Twitch-TwitchConnector.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#constant_NAME">NAME</a></li>
+                                                    <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#constant_SCOPES">SCOPES</a></li>
+                                                    <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#constant_USER_CACHE">USER_CACHE</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#property_adapter">$adapter</a></li>
+                                                    <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#property_bot">$bot</a></li>
+                                                    <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#property_config">$config</a></li>
+                                                    <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#property_dispatcher">$dispatcher</a></li>
+                                                    <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#property_gateway">$gateway</a></li>
+                                                    <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#property_handlers">$handlers</a></li>
+                                                    <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#property_pending">$pending</a></li>
+                                                    <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#property_twitch">$twitch</a></li>
+                                                    <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#property_users">$users</a></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_actions">actions()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_avatarFor">avatarFor()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_boot">boot()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_getConfig">getConfig()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_getDispatcher">getDispatcher()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_getTwitch">getTwitch()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_joined">joined()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_label">label()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_lookupUser">lookupUser()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_name">name()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_normalise">normalise()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_onIncoming">onIncoming()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_queued">queued()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_relay">relay()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_resolve">resolve()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_send">send()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_start">start()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_stop">stop()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_surface">surface()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_sync">sync()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_dispatch">dispatch()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_promptForDeviceCode">promptForDeviceCode()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_reauthorizer">reauthorizer()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_warnIfCannotRefresh">warnIfCannotRefresh()</a></li>
+                                            <li class=""><a href="classes/Bridge-Twitch-TwitchConnector.html#method_warnIfTokenIsSomeoneElse">warnIfTokenIsSomeoneElse()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="classes/Bridge-Twitch-TwitchConnector.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

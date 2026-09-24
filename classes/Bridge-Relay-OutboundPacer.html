@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>DiscordPHP-BridgeBot Documentation</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">DiscordPHP-BridgeBot Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/bridge.html" class="">Bridge</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bridge-actions.html" class="">Actions</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-builders.html" class="">Builders</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-capability.html" class="">Capability</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-helpers.html" class="">Helpers</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-message.html" class="">Message</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-modules.html" class="">Modules</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-relay.html" class="">Relay</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-support.html" class="">Support</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-telegram.html" class="">Telegram</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-twitch.html" class="">Twitch</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -packages">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/bridge.html">Bridge</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/bridge-relay.html">Relay</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    OutboundPacer
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
+                            </ul>
+        </div>
+    
+    
+    </h2>
+
+<div class="phpdocumentor-label-line">
+
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
+
+
+</div>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php"><a href="files/discordphp-bridge-src-bridge-relay-outboundpacer.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php">OutboundPacer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">51</span>
+
+    </aside>
+
+            <p class="phpdocumentor-summary">Paces what the bot says *into* Discord, per channel, across every connector.</p>
+
+
+    <section class="phpdocumentor-description"><p><code class="prettyprint">Discord\Http</code> already queues per rate-limit bucket and caps concurrency, and
+everything here goes through it — nothing in this project may hold a second
+HTTP client. What that machinery cannot do is decline to make a request in
+the first place, and the arithmetic changed when the platforms were merged:</p>
+<ul>
+<li>Two separate bots were two applications with two tokens, and therefore two
+50-requests-per-second budgets. One bot has one.</li>
+<li>One message on a busy network fans out to <em>every</em> Discord channel following
+that room, across unrelated servers.</li>
+<li>Two connectors relaying into the same channel each stay under the limit on
+their own and breach it together, which is exactly the failure a per-sender
+limit cannot see.</li>
+</ul>
+<p>So relayed traffic is throttled at the source, by destination channel,
+leaving the budget for the things a person is waiting on. Interaction
+responses deliberately do <em>not</em> come through here: Discord documents them as
+exempt from the global limit, so a command keeps answering while the relay is
+saturated.</p>
+<p>Bursts are not the enemy — a token bucket lets ordinary chat through
+immediately and only slows a genuine flood. A channel out of tokens is
+skipped over rather than stalling the whole queue behind it.</p>
+</section>
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Bridge-Relay-OutboundPacer.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">link</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        <a class="phpdocumentor-tag-link" href="https://docs.discord.com/developers/topics/rate-limits"> https://docs.discord.com/developers/topics/rate-limits </a>
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">author</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>Valithor Obsidion <a href="mailto:valithor@discordphp.org">valithor@discordphp.org</a></p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+    
+    
+<h3 id="toc">
+    Table of Contents
+    <a href="classes/Bridge-Relay-OutboundPacer.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h3>
+
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Bridge-Relay-OutboundPacer.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Relay-OutboundPacer.html#constant_CAPACITY">CAPACITY</a>
+    <span>
+        &nbsp;: mixed&nbsp;= 5                            </span>
+</dt>
+<dd>Discord&#039;s per-channel message sublimit: five in five seconds.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Relay-OutboundPacer.html#constant_PER">PER</a>
+    <span>
+        &nbsp;: mixed&nbsp;= 5.0                            </span>
+</dt>
+
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Bridge-Relay-OutboundPacer.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Relay-OutboundPacer.html#property_capacity">$capacity</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Relay-OutboundPacer.html#property_clock">$clock</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Relay-OutboundPacer.html#property_draining">$draining</a>
+    <span>
+                        &nbsp;: bool            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Relay-OutboundPacer.html#property_limiters">$limiters</a>
+    <span>
+                        &nbsp;: array&lt;string, <a href="classes/Bridge-Support-RateLimiter.html"><abbr title="\Bridge\Support\RateLimiter">RateLimiter</abbr></a>&gt;            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Relay-OutboundPacer.html#property_loop">$loop</a>
+    <span>
+                        &nbsp;: <abbr title="\React\EventLoop\LoopInterface">LoopInterface</abbr>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Relay-OutboundPacer.html#property_per">$per</a>
+    <span>
+                        &nbsp;: float            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Relay-OutboundPacer.html#property_queue">$queue</a>
+    <span>
+                        &nbsp;: array&lt;int, <abbr title="array{channel: string, send: \Closure, deferred: \React\Promise\Deferred}">Deferred}</abbr>&gt;            </span>
+</dt>
+
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Bridge-Relay-OutboundPacer.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Relay-OutboundPacer.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Relay-OutboundPacer.html#method_enqueue">enqueue()</a>
+    <span>
+                                &nbsp;: <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>    </span>
+</dt>
+<dd>Runs `$send` as soon as the channel&#039;s budget allows, and resolves with
+whatever it returns.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Relay-OutboundPacer.html#method_queued">queued()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>How many sends are waiting, for logging and health checks.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Relay-OutboundPacer.html#method_queuedFor">queuedFor()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>How many are waiting on one channel.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-OutboundPacer.html#method_drain">drain()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Sends whatever the budget allows, then re-arms a timer for the rest.</dd>
+
+    </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Bridge-Relay-OutboundPacer.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CAPACITY">
+        CAPACITY
+        <a href="classes/Bridge-Relay-OutboundPacer.html#constant_CAPACITY" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php"><a href="files/discordphp-bridge-src-bridge-relay-outboundpacer.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php">OutboundPacer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">59</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Discord&#039;s per-channel message sublimit: five in five seconds.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CAPACITY</span>
+    = <span class="phpdocumentor-signature__default-value">5</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><p>Not published as a header — it is a documented property of the message
+routes — so it is encoded here rather than discovered from a 429.</p>
+</section>
+
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_PER">
+        PER
+        <a href="classes/Bridge-Relay-OutboundPacer.html#constant_PER" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php"><a href="files/discordphp-bridge-src-bridge-relay-outboundpacer.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php">OutboundPacer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">61</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">PER</span>
+    = <span class="phpdocumentor-signature__default-value">5.0</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+            </section>
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Bridge-Relay-OutboundPacer.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_capacity">
+        $capacity
+        <a href="classes/Bridge-Relay-OutboundPacer.html#property_capacity" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php"><a href="files/discordphp-bridge-src-bridge-relay-outboundpacer.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php">OutboundPacer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">76</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$capacity</span>
+     = <span class="phpdocumentor-signature__default-value">self::CAPACITY</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_clock">
+        $clock
+        <a href="classes/Bridge-Relay-OutboundPacer.html#property_clock" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php"><a href="files/discordphp-bridge-src-bridge-relay-outboundpacer.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php">OutboundPacer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">78</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$clock</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_draining">
+        $draining
+        <a href="classes/Bridge-Relay-OutboundPacer.html#property_draining" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php"><a href="files/discordphp-bridge-src-bridge-relay-outboundpacer.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php">OutboundPacer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">69</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$draining</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_limiters">
+        $limiters
+        <a href="classes/Bridge-Relay-OutboundPacer.html#property_limiters" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php"><a href="files/discordphp-bridge-src-bridge-relay-outboundpacer.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php">OutboundPacer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">67</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">array&lt;string, <a href="classes/Bridge-Support-RateLimiter.html"><abbr title="\Bridge\Support\RateLimiter">RateLimiter</abbr></a>&gt;</span>
+    <span class="phpdocumentor-signature__name">$limiters</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_loop">
+        $loop
+        <a href="classes/Bridge-Relay-OutboundPacer.html#property_loop" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php"><a href="files/discordphp-bridge-src-bridge-relay-outboundpacer.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php">OutboundPacer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">75</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><abbr title="\React\EventLoop\LoopInterface">LoopInterface</abbr></span>
+    <span class="phpdocumentor-signature__name">$loop</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_per">
+        $per
+        <a href="classes/Bridge-Relay-OutboundPacer.html#property_per" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php"><a href="files/discordphp-bridge-src-bridge-relay-outboundpacer.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php">OutboundPacer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">77</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">float</span>
+    <span class="phpdocumentor-signature__name">$per</span>
+     = <span class="phpdocumentor-signature__default-value">self::PER</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_queue">
+        $queue
+        <a href="classes/Bridge-Relay-OutboundPacer.html#property_queue" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php"><a href="files/discordphp-bridge-src-bridge-relay-outboundpacer.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php">OutboundPacer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">64</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">array&lt;int, <abbr title="array{channel: string, send: \Closure, deferred: \React\Promise\Deferred}">Deferred}</abbr>&gt;</span>
+    <span class="phpdocumentor-signature__name">$queue</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Bridge-Relay-OutboundPacer.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Bridge-Relay-OutboundPacer.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php"><a href="files/discordphp-bridge-src-bridge-relay-outboundpacer.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php">OutboundPacer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">74</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\React\EventLoop\LoopInterface">LoopInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$loop</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$capacity</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\self::CAPACITY">self::CAPACITY</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$per</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\self::PER">self::PER</abbr></span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">callable(): float|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clock</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$loop</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\React\EventLoop\LoopInterface">LoopInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$capacity</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><abbr title="\self::CAPACITY">self::CAPACITY</abbr></span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$per</span>
+                : <span class="phpdocumentor-argument-list__argument__type">float</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><abbr title="\self::PER">self::PER</abbr></span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$clock</span>
+                : <span class="phpdocumentor-argument-list__argument__type">callable(): float|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Defaults to <code class="prettyprint">microtime(true)</code>; injected for tests.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_enqueue">
+        enqueue()
+        <a href="classes/Bridge-Relay-OutboundPacer.html#method_enqueue" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php"><a href="files/discordphp-bridge-src-bridge-relay-outboundpacer.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php">OutboundPacer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">92</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Runs `$send` as soon as the channel&#039;s budget allows, and resolves with
+whatever it returns.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">enqueue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$channelId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">callable(): <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$send</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>The caller gets a promise rather than a callback so a failure — a webhook
+that has been deleted, a channel the bot was removed from — still
+surfaces at the point that asked for the send.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$channelId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$send</span>
+                : <span class="phpdocumentor-argument-list__argument__type">callable(): <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_queued">
+        queued()
+        <a href="classes/Bridge-Relay-OutboundPacer.html#method_queued" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php"><a href="files/discordphp-bridge-src-bridge-relay-outboundpacer.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php">OutboundPacer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">108</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">How many sends are waiting, for logging and health checks.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">queued</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_queuedFor">
+        queuedFor()
+        <a href="classes/Bridge-Relay-OutboundPacer.html#method_queuedFor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php"><a href="files/discordphp-bridge-src-bridge-relay-outboundpacer.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php">OutboundPacer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">114</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">How many are waiting on one channel.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">queuedFor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$channelId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$channelId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_drain">
+        drain()
+        <a href="classes/Bridge-Relay-OutboundPacer.html#method_drain" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php"><a href="files/discordphp-bridge-src-bridge-relay-outboundpacer.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/OutboundPacer.php">OutboundPacer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">126</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Sends whatever the budget allows, then re-arms a timer for the rest.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">drain</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Head-of-line blocking is avoided by skipping over a channel that is out
+of tokens instead of stalling the whole queue behind it: one busy channel
+should not delay a quiet one in another server.</p>
+</section>
+
+    
+    
+
+        
+    
+    
+</article>
+            </section>
+
+        
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Bridge-Relay-OutboundPacer.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/Bridge-Relay-OutboundPacer.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Bridge-Relay-OutboundPacer.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Bridge-Relay-OutboundPacer.html#constant_CAPACITY">CAPACITY</a></li>
+                                                    <li class=""><a href="classes/Bridge-Relay-OutboundPacer.html#constant_PER">PER</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Bridge-Relay-OutboundPacer.html#property_capacity">$capacity</a></li>
+                                                    <li class=""><a href="classes/Bridge-Relay-OutboundPacer.html#property_clock">$clock</a></li>
+                                                    <li class=""><a href="classes/Bridge-Relay-OutboundPacer.html#property_draining">$draining</a></li>
+                                                    <li class=""><a href="classes/Bridge-Relay-OutboundPacer.html#property_limiters">$limiters</a></li>
+                                                    <li class=""><a href="classes/Bridge-Relay-OutboundPacer.html#property_loop">$loop</a></li>
+                                                    <li class=""><a href="classes/Bridge-Relay-OutboundPacer.html#property_per">$per</a></li>
+                                                    <li class=""><a href="classes/Bridge-Relay-OutboundPacer.html#property_queue">$queue</a></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Bridge-Relay-OutboundPacer.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-OutboundPacer.html#method_enqueue">enqueue()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-OutboundPacer.html#method_queued">queued()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-OutboundPacer.html#method_queuedFor">queuedFor()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-OutboundPacer.html#method_drain">drain()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="classes/Bridge-Relay-OutboundPacer.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,2447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>DiscordPHP-BridgeBot Documentation</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">DiscordPHP-BridgeBot Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/bridge.html" class="">Bridge</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bridge-actions.html" class="">Actions</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-builders.html" class="">Builders</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-capability.html" class="">Capability</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-helpers.html" class="">Helpers</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-message.html" class="">Message</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-modules.html" class="">Modules</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-relay.html" class="">Relay</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-support.html" class="">Support</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-telegram.html" class="">Telegram</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-twitch.html" class="">Twitch</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -packages">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/bridge.html">Bridge</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/bridge-relay.html">Relay</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    ChatRelay
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
+                            </ul>
+        </div>
+    
+    
+    </h2>
+
+<div class="phpdocumentor-label-line">
+
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
+
+
+</div>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">70</span>
+
+    </aside>
+
+            <p class="phpdocumentor-summary">The relay itself: Discord chat out to every connector, and every connector&#039;s
+chat back into Discord.</p>
+
+
+    <section class="phpdocumentor-description"><p>The hard requirement here is that nothing the bot says can come back to it.
+A bridge that repeats its own output is an infinite loop that gets the
+account banned from both networks within minutes, so each direction drops its
+own traffic as early as it can — see <abbr title="\Bridge\Relay\shouldRelayFromDiscord()">shouldRelayFromDiscord()</abbr> and
+<a href="classes/Bridge-Message-Incoming.html#property_own"><abbr title="\Bridge\Message\Incoming::$own">Incoming::$own</abbr></a>, which the connector sets because only it can recognise
+its own voice.</p>
+<p>With more than one connector installed a single Discord message may go to
+several networks at once, and a single message from one network still fans
+out to every Discord channel following that room, across unrelated servers.
+Both directions are bounded — the first by how many connectors are installed,
+the second by <a href="classes/Bridge-Relay-OutboundPacer.html"><abbr title="\Bridge\Relay\OutboundPacer">OutboundPacer</abbr></a>. A channel bridged to two networks also
+carries each network's chat to the other, directly, since the Discord copy
+of it is a webhook message and never relayed onward.</p>
+<h2>Edits</h2>
+<p>An edit is only ever applied as an edit. A network that cannot rewrite a
+message it sent — IRC — never hears about one, because the only alternative
+is posting the message a second time, and a second copy of everything
+somebody corrects a typo in is worse than the typo.</p>
+<p>That matters more than it sounds, because Discord calls a lot of things an
+edit. When a message containing a link is unfurled into an embed, Discord
+sends <code class="prettyprint">MESSAGE_UPDATE</code> with the content unchanged. Treating that as an edit
+would relay every message with a link in it twice. So an update is acted on
+only when the text or the attachments actually changed.</p>
+</section>
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Bridge-Relay-ChatRelay.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">author</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>Valithor Obsidion <a href="mailto:valithor@discordphp.org">valithor@discordphp.org</a></p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+    
+    
+<h3 id="toc">
+    Table of Contents
+    <a href="classes/Bridge-Relay-ChatRelay.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h3>
+
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Bridge-Relay-ChatRelay.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#constant_REMEMBER">REMEMBER</a>
+    <span>
+        &nbsp;: mixed&nbsp;= 500                            </span>
+</dt>
+<dd>How many relayed messages to remember for editing, per direction.</dd>
+
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Bridge-Relay-ChatRelay.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#property_bot">$bot</a>
+    <span>
+                        &nbsp;: <a href="classes/Bridge-Bot.html"><abbr title="\Bridge\Bot">Bot</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#property_commands">$commands</a>
+    <span>
+                        &nbsp;: array&lt;string, <a href="classes/Bridge-Command-ChatDispatcher.html"><abbr title="\Bridge\Command\ChatDispatcher">ChatDispatcher</abbr></a>&gt;            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#property_delivered">$delivered</a>
+    <span>
+                        &nbsp;: <a href="classes/Bridge-Relay-MessageMap.html"><abbr title="\Bridge\Relay\MessageMap">MessageMap</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#property_seen">$seen</a>
+    <span>
+                        &nbsp;: <a href="classes/Bridge-Relay-MessageMap.html"><abbr title="\Bridge\Relay\MessageMap">MessageMap</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#property_sent">$sent</a>
+    <span>
+                        &nbsp;: <a href="classes/Bridge-Relay-MessageMap.html"><abbr title="\Bridge\Relay\MessageMap">MessageMap</abbr></a>            </span>
+</dt>
+
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Bridge-Relay-ChatRelay.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_attach">attach()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Attaches both directions. Call once; nothing arrives until a connector starts.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_fingerprint">fingerprint()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>What a relayed message looked like, for telling a real edit from an
+update that changed nothing a chat can see.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_isDiscordCommand">isDiscordCommand()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Whether a Discord message is addressed to the bot rather than to the
+channel.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_shouldRelayFromDiscord">shouldRelayFromDiscord()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Whether a Discord message is real conversation worth relaying.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_acrossNetworks">acrossNetworks()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Hands a message on to every *other* network bridged to the same Discord
+channels, so a channel bridged to Twitch and Telegram is one conversation
+across all three rather than two that only Discord can see.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_attachments">attachments()</a>
+    <span>
+                                &nbsp;: array&lt;int, <a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a>&gt;    </span>
+</dt>
+<dd>Each attachment as a {@see Media}.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_authorName">authorName()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_bridgedConnectors">bridgedConnectors()</a>
+    <span>
+                                &nbsp;: array&lt;int, <abbr title="array{0: \Bridge\Connector, 1: string}">Connector, 1: string}</abbr>&gt;    </span>
+</dt>
+<dd>Every connector this Discord channel is bridged through, and the room on
+each.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_channelNames">channelNames()</a>
+    <span>
+                                &nbsp;: array&lt;string, string&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_channelsFor">channelsFor()</a>
+    <span>
+                                &nbsp;: array&lt;int, <abbr title="\Discord\Parts\Channel\Channel">Channel</abbr>&gt;    </span>
+</dt>
+<dd>Every cached Discord channel following the room a message came from.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_compose">compose()</a>
+    <span>
+                                &nbsp;: <a href="classes/Bridge-Message-Outgoing.html"><abbr title="\Bridge\Message\Outgoing">Outgoing</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_composeFromNetwork">composeFromNetwork()</a>
+    <span>
+                                &nbsp;: <a href="classes/Bridge-Message-Outgoing.html"><abbr title="\Bridge\Message\Outgoing">Outgoing</abbr></a>    </span>
+</dt>
+<dd>A message from one network as another should receive it.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_deliver">deliver()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_describeMedia">describeMedia()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>A file, as a link when there is a safe one and as a name otherwise.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_editInDiscord">editInDiscord()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Rewrites every Discord copy of an edited message, returning whether any
+were remembered.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_fetch">fetch()</a>
+    <span>
+                                &nbsp;: <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, array{filename: string, content: string}|null&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_fromConnector">fromConnector()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_fromDiscord">fromDiscord()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_fromDiscordEdit">fromDiscordEdit()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>An edit of something already relayed, and only that.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_incomingKey">incomingKey()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Where a message from a network is remembered. Room and id together,
+because a message id is only unique within its room on some networks —
+Telegram numbers each chat from one.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_mirrorableIn">mirrorableIn()</a>
+    <span>
+                                &nbsp;: <a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a>|null    </span>
+</dt>
+<dd>The one attachment worth copying across as a file.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_photoIn">photoIn()</a>
+    <span>
+                                &nbsp;: <a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a>|null    </span>
+</dt>
+<dd>The one picture worth handing to the network itself, if there is one.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_relayPhoto">relayPhoto()</a>
+    <span>
+                                &nbsp;: <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, string|null&gt;    </span>
+</dt>
+<dd>Hands the picture to a network that can carry it, and falls back to a
+link in the text when it will not take it.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_relayTo">relayTo()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_renderForDiscord">renderForDiscord()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+<dd>One incoming message as Discord should show it: the quoted reply, the
+text, and whatever files came with it.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_roleNames">roleNames()</a>
+    <span>
+                                &nbsp;: array&lt;string, string&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_suffix">suffix()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Appended to a relayed name, so it is never mistaken for a Discord account.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-ChatRelay.html#method_userNames">userNames()</a>
+    <span>
+                                &nbsp;: array&lt;string, string&gt;    </span>
+</dt>
+
+    </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Bridge-Relay-ChatRelay.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_REMEMBER">
+        REMEMBER
+        <a href="classes/Bridge-Relay-ChatRelay.html#constant_REMEMBER" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">How many relayed messages to remember for editing, per direction.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">REMEMBER</span>
+    = <span class="phpdocumentor-signature__default-value">500</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+            </section>
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Bridge-Relay-ChatRelay.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_bot">
+        $bot
+        <a href="classes/Bridge-Relay-ChatRelay.html#property_bot" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">87</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Bridge-Bot.html"><abbr title="\Bridge\Bot">Bot</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$bot</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_commands">
+        $commands
+        <a href="classes/Bridge-Relay-ChatRelay.html#property_commands" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">85</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">array&lt;string, <a href="classes/Bridge-Command-ChatDispatcher.html"><abbr title="\Bridge\Command\ChatDispatcher">ChatDispatcher</abbr></a>&gt;</span>
+    <span class="phpdocumentor-signature__name">$commands</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+        <section class="phpdocumentor-description"><p>connector name =&gt; its command matcher</p>
+</section>
+
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_delivered">
+        $delivered
+        <a href="classes/Bridge-Relay-ChatRelay.html#property_delivered" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">82</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Bridge-Relay-MessageMap.html"><abbr title="\Bridge\Relay\MessageMap">MessageMap</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$delivered</span>
+    </code>
+
+    
+        <section class="phpdocumentor-description"><p>&quot;connector:room:id&quot; =&gt; list of Discord copies it became</p>
+</section>
+
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_seen">
+        $seen
+        <a href="classes/Bridge-Relay-ChatRelay.html#property_seen" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">79</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Bridge-Relay-MessageMap.html"><abbr title="\Bridge\Relay\MessageMap">MessageMap</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$seen</span>
+    </code>
+
+    
+        <section class="phpdocumentor-description"><p>&quot;discordId&quot; =&gt; fingerprint of what was relayed, to tell an edit from an unfurl</p>
+</section>
+
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_sent">
+        $sent
+        <a href="classes/Bridge-Relay-ChatRelay.html#property_sent" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">76</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Bridge-Relay-MessageMap.html"><abbr title="\Bridge\Relay\MessageMap">MessageMap</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$sent</span>
+    </code>
+
+    
+        <section class="phpdocumentor-description"><p>&quot;connector:discordId&quot; =&gt; the id it was given on that network</p>
+</section>
+
+    
+
+        
+        
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Bridge-Relay-ChatRelay.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">87</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Bot.html"><abbr title="\Bridge\Bot">Bot</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bot</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$remember</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\self::REMEMBER">self::REMEMBER</abbr></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$bot</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Bot.html"><abbr title="\Bridge\Bot">Bot</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$remember</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><abbr title="\self::REMEMBER">self::REMEMBER</abbr></span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_attach">
+        attach()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_attach" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">95</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Attaches both directions. Call once; nothing arrives until a connector starts.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">attach</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fingerprint">
+        fingerprint()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_fingerprint" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">691</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">What a relayed message looked like, for telling a real edit from an
+update that changed nothing a chat can see.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fingerprint</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isDiscordCommand">
+        isDiscordCommand()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_isDiscordCommand" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">667</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Whether a Discord message is addressed to the bot rather than to the
+channel.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isDiscordCommand</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Only a <em>registered</em> command counts. Chat is full of <code class="prettyprint">!</code> — &quot;yes!!!&quot;, or
+another bot's <code class="prettyprint">!drop</code> — and treating all of it as a command would quietly
+stop relaying a slice of ordinary conversation.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$content</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_shouldRelayFromDiscord">
+        shouldRelayFromDiscord()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_shouldRelayFromDiscord" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">287</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Whether a Discord message is real conversation worth relaying.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">shouldRelayFromDiscord</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Four rejections, each for its own reason:</p>
+<ul>
+<li><strong>Webhook messages.</strong> Every connector's chat is delivered into Discord
+<em>through</em> a webhook, so this single check is what stops the loop. It has
+to come first and it has to be unconditional.</li>
+<li><strong>Bot authors.</strong> Two bridges sharing a channel would otherwise ping-pong
+forever, and a bot's output is rarely what a chat wants to read.</li>
+<li><strong>The bot's own messages</strong>, which is belt-and-braces: command replies
+are sent as the bot and would otherwise be echoed out, having already
+been said there.</li>
+<li><strong>Commands.</strong> <code class="prettyprint">!twitch title something</code> is an instruction to the bot,
+not a remark; relaying it would put every command into the stream's
+chat.</li>
+</ul>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_acrossNetworks">
+        acrossNetworks()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_acrossNetworks" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">369</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Hands a message on to every *other* network bridged to the same Discord
+channels, so a channel bridged to Twitch and Telegram is one conversation
+across all three rather than two that only Discord can see.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">acrossNetworks</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$incoming</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Discord cannot make this hop itself: the copy it receives arrives through
+a webhook, and webhook messages are dropped unconditionally because that
+is what stops the loop. So it is made here, from the original.</p>
+<p>Each room gets the message once however many channels lead to it, and an
+edit follows the same rule as everywhere else — applied as an edit where
+the network can and the copy is remembered, otherwise not at all.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$source</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$incoming</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_attachments">
+        attachments()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_attachments" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">760</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Each attachment as a {@see Media}.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">attachments</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p><code class="prettyprint">url</code> rather than <code class="prettyprint">proxy_url</code>: both are signed and both expire, but <code class="prettyprint">url</code>
+is the canonical one, and the proxy adds nothing for a recipient who is
+going to open it in a browser.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_authorName">
+        authorName()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_authorName" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">741</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">authorName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_bridgedConnectors">
+        bridgedConnectors()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_bridgedConnectors" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">255</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Every connector this Discord channel is bridged through, and the room on
+each.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">bridgedConnectors</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$channelId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <abbr title="array{0: \Bridge\Connector, 1: string}">Connector, 1: string}</abbr>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$channelId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <abbr title="array{0: \Bridge\Connector, 1: string}">Connector, 1: string}</abbr>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_channelNames">
+        channelNames()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_channelNames" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">797</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">channelNames</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_channelsFor">
+        channelsFor()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_channelsFor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">458</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Every cached Discord channel following the room a message came from.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">channelsFor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$incoming</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, <abbr title="\Discord\Parts\Channel\Channel">Channel</abbr>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$incoming</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, <abbr title="\Discord\Parts\Channel\Channel">Channel</abbr>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_compose">
+        compose()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_compose" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">712</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">compose</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$edited</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Message-Outgoing.html"><abbr title="\Bridge\Message\Outgoing">Outgoing</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$edited</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Message-Outgoing.html"><abbr title="\Bridge\Message\Outgoing">Outgoing</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_composeFromNetwork">
+        composeFromNetwork()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_composeFromNetwork" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">420</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A message from one network as another should receive it.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">composeFromNetwork</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$incoming</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Message-Outgoing.html"><abbr title="\Bridge\Message\Outgoing">Outgoing</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Named with the network it came from, as a Discord copy is. A file only
+the source network can open — a Telegram photo has no URL that does not
+carry the bot token — goes as a link to the public page showing it when
+there is one, and is named otherwise.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$source</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$incoming</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$key</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Message-Outgoing.html"><abbr title="\Bridge\Message\Outgoing">Outgoing</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_deliver">
+        deliver()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_deliver" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">518</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">deliver</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Parts\Channel\Channel">Channel</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$channel</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$incoming</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$avatar</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array{filename: string, content: string}|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$channel</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Parts\Channel\Channel">Channel</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$incoming</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$text</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$avatar</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$file</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array{filename: string, content: string}|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_describeMedia">
+        describeMedia()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_describeMedia" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">636</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A file, as a link when there is a safe one and as a name otherwise.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">describeMedia</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$item</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>A connector hands over <code class="prettyprint">null</code> for the URL when the only link it could
+produce carries a credential — a Telegram file URL has the bot token in
+its path — so this never leaks one into a channel. A public page showing
+the file is the next best thing: reached when a file was too big to copy
+across, or the copy failed.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$item</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_editInDiscord">
+        editInDiscord()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_editInDiscord" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">484</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Rewrites every Discord copy of an edited message, returning whether any
+were remembered.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">editInDiscord</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$incoming</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>When none are — the original was relayed before the last restart, or so
+long ago it fell out of memory — the edit is relayed as a new message
+rather than lost, which on a network that sends whole messages as edits
+is the only way the correction reaches anyone.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$incoming</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fetch">
+        fetch()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_fetch" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">577</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">fetch</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$media</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, array{filename: string, content: string}|null&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$media</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, array{filename: string, content: string}|null&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fromConnector">
+        fromConnector()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_fromConnector" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">308</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">fromConnector</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$incoming</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$incoming</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fromDiscord">
+        fromDiscord()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_fromDiscord" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">111</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">fromDiscord</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fromDiscordEdit">
+        fromDiscordEdit()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_fromDiscordEdit" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">143</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">An edit of something already relayed, and only that.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">fromDiscordEdit</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Three things are not edits and are dropped: a partial update with no
+message part (a pin, a flag change), an update to a message this bot
+never relayed, and an update whose content did not change — which is
+what an unfurling link looks like.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type">object</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_incomingKey">
+        incomingKey()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_incomingKey" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">707</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Where a message from a network is remembered. Room and id together,
+because a message id is only unique within its room on some networks —
+Telegram numbers each chat from one.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">incomingKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$incoming</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$incoming</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_mirrorableIn">
+        mirrorableIn()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_mirrorableIn" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">559</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The one attachment worth copying across as a file.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">mirrorableIn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$incoming</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Only one, and only from a connector that can fetch it: a second upload
+per message multiplies the bytes by every channel it fans out to.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$incoming</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_photoIn">
+        photoIn()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_photoIn" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">238</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The one picture worth handing to the network itself, if there is one.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">photoIn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Outgoing.html"><abbr title="\Bridge\Message\Outgoing">Outgoing</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$outgoing</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Only the first: sending several means a media group, which is a different
+call on every network that has one, and mixing files with images is not
+something they agree on. The rest relay as links in the text.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$outgoing</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Outgoing.html"><abbr title="\Bridge\Message\Outgoing">Outgoing</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_relayPhoto">
+        relayPhoto()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_relayPhoto" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">215</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Hands the picture to a network that can carry it, and falls back to a
+link in the text when it will not take it.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">relayPhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Capability-Media.html"><abbr title="\Bridge\Capability\Media">Media</abbr></a>|<a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$target</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Outgoing.html"><abbr title="\Bridge\Message\Outgoing">Outgoing</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$outgoing</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, string|null&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>A network that can carry the picture should, because then it is actually
+there — a relayed link to Discord's CDN expires in about a day, so it is
+dead by the time anyone reads the logs.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Capability-Media.html"><abbr title="\Bridge\Capability\Media">Media</abbr></a>|<a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$target</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$photo</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$outgoing</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Outgoing.html"><abbr title="\Bridge\Message\Outgoing">Outgoing</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, string|null&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_relayTo">
+        relayTo()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_relayTo" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">184</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">relayTo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$target</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Outgoing.html"><abbr title="\Bridge\Message\Outgoing">Outgoing</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$outgoing</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$target</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$outgoing</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Outgoing.html"><abbr title="\Bridge\Message\Outgoing">Outgoing</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_renderForDiscord">
+        renderForDiscord()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_renderForDiscord" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">602</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">One incoming message as Discord should show it: the quoted reply, the
+text, and whatever files came with it.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">renderForDiscord</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$incoming</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sourceHasLines</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mirrored</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$incoming</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Incoming.html"><abbr title="\Bridge\Message\Incoming">Incoming</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$sourceHasLines</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$mirrored</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Message-Media.html"><abbr title="\Bridge\Message\Media">Media</abbr></a>|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>An attachment that is being uploaded, so is not named as well.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_roleNames">
+        roleNames()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_roleNames" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">814</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">roleNames</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_suffix">
+        suffix()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_suffix" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">652</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Appended to a relayed name, so it is never mistaken for a Discord account.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">suffix</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Connector.html"><abbr title="\Bridge\Connector">Connector</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_userNames">
+        userNames()
+        <a href="classes/Bridge-Relay-ChatRelay.html#method_userNames" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php"><a href="files/discordphp-bridge-src-bridge-relay-chatrelay.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/ChatRelay.php">ChatRelay.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">785</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">userNames</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Parts\Channel\Message">Message</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span>
+            </section>
+
+</article>
+            </section>
+
+        
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Bridge-Relay-ChatRelay.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/Bridge-Relay-ChatRelay.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Bridge-Relay-ChatRelay.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#constant_REMEMBER">REMEMBER</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#property_bot">$bot</a></li>
+                                                    <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#property_commands">$commands</a></li>
+                                                    <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#property_delivered">$delivered</a></li>
+                                                    <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#property_seen">$seen</a></li>
+                                                    <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#property_sent">$sent</a></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_attach">attach()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_fingerprint">fingerprint()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_isDiscordCommand">isDiscordCommand()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_shouldRelayFromDiscord">shouldRelayFromDiscord()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_acrossNetworks">acrossNetworks()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_attachments">attachments()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_authorName">authorName()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_bridgedConnectors">bridgedConnectors()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_channelNames">channelNames()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_channelsFor">channelsFor()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_compose">compose()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_composeFromNetwork">composeFromNetwork()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_deliver">deliver()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_describeMedia">describeMedia()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_editInDiscord">editInDiscord()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_fetch">fetch()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_fromConnector">fromConnector()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_fromDiscord">fromDiscord()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_fromDiscordEdit">fromDiscordEdit()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_incomingKey">incomingKey()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_mirrorableIn">mirrorableIn()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_photoIn">photoIn()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_relayPhoto">relayPhoto()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_relayTo">relayTo()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_renderForDiscord">renderForDiscord()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_roleNames">roleNames()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_suffix">suffix()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-ChatRelay.html#method_userNames">userNames()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="classes/Bridge-Relay-ChatRelay.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

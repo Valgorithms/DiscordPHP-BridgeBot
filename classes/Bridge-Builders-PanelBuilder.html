@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>DiscordPHP-BridgeBot Documentation</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">DiscordPHP-BridgeBot Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/bridge.html" class="">Bridge</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bridge-actions.html" class="">Actions</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-builders.html" class="">Builders</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-capability.html" class="">Capability</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-helpers.html" class="">Helpers</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-message.html" class="">Message</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-modules.html" class="">Modules</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-relay.html" class="">Relay</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-support.html" class="">Support</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-telegram.html" class="">Telegram</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-twitch.html" class="">Twitch</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -packages">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/bridge.html">Bridge</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/bridge-builders.html">Builders</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    PanelBuilder
+
+        <span class="phpdocumentor-element__extends">
+        extends <abbr title="\Discord\Builders\MessageBuilder">MessageBuilder</abbr>
+    </span>
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
+                            </ul>
+        </div>
+    
+    
+    </h2>
+
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">54</span>
+
+    </aside>
+
+            <p class="phpdocumentor-summary">A {@see MessageBuilder} that is a Components v2 panel: one accented
+{@see Container} that everything else is added to.</p>
+
+
+    <section class="phpdocumentor-description"><p>It extends <code class="prettyprint">MessageBuilder</code> rather than wrapping it so a panel <em>is</em> a
+message builder — anything that takes one (<code class="prettyprint">respondWithMessage()</code>,
+<code class="prettyprint">updateMessage()</code>, <code class="prettyprint">sendMessage()</code>, <code class="prettyprint">Webhook::execute()</code>) takes a panel,
+with no unwrapping step and nothing to keep in sync as DiscordPHP's builder
+grows. The named constructors follow the same shape as
+<abbr title="\Discord\Builders\Components\Button::primary()">Button::primary()</abbr>: a static per variant, then fluent methods.</p>
+<p>Components v2 rather than embeds because these panels are not decorated
+text: a bridge list needs a button <em>per row</em> to unlink that row, which is
+exactly what a <abbr title="\Discord\Builders\Components\Section">Section</abbr> accessory is for and which an embed cannot
+express at all. Adding a v2 component sets the <code class="prettyprint">IS_COMPONENTS_V2</code> flag,
+which forbids <code class="prettyprint">content</code> on the same message — so everything a panel says
+lives in a <abbr title="\Discord\Builders\Components\TextDisplay">TextDisplay</abbr>.</p>
+<p>Every panel also sets <code class="prettyprint">allowed_mentions: none</code>. Panels quote text supplied
+by another network — a room title, somebody's name — and none of it should be
+able to ping a Discord server.</p>
+</section>
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Bridge-Builders-PanelBuilder.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">since</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">1.0.0</span>
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">author</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>Valithor Obsidion <a href="mailto:valithor@discordphp.org">valithor@discordphp.org</a></p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+    
+    
+<h3 id="toc">
+    Table of Contents
+    <a href="classes/Bridge-Builders-PanelBuilder.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h3>
+
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Bridge-Builders-PanelBuilder.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#constant_ACCENT">ACCENT</a>
+    <span>
+        &nbsp;: mixed&nbsp;= 0x2aabee                            </span>
+</dt>
+<dd>A calm blue, for ordinary panels.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#constant_DANGER">DANGER</a>
+    <span>
+        &nbsp;: mixed&nbsp;= 0xed4245                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#constant_MAX_ROWS">MAX_ROWS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= 10                            </span>
+</dt>
+<dd>Discord allows 40 components in one v2 message, and each row costs a
+Section plus its text and its button. Ten rows leaves ample room for the
+heading, the separator and the footer.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#constant_SUCCESS">SUCCESS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= 0x57f287                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#constant_WARNING">WARNING</a>
+    <span>
+        &nbsp;: mixed&nbsp;= 0xfee75c                            </span>
+</dt>
+
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Bridge-Builders-PanelBuilder.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#property_container">$container</a>
+    <span>
+                        &nbsp;: <abbr title="\Discord\Builders\Components\Container">Container</abbr>            </span>
+</dt>
+<dd>The container every other component is added to.</dd>
+
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Bridge-Builders-PanelBuilder.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#method_addActions">addActions()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+<dd>Adds a row of buttons.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#method_addRow">addRow()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+<dd>Adds a line of text with a button or thumbnail beside it — the only two
+things a Section accepts as an accessory.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#method_addSeparator">addSeparator()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+<dd>Adds a divider.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#method_addText">addText()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+<dd>Adds a block of markdown.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#method_confirm">confirm()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+<dd>A destructive action behind a second press.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#method_error">error()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#method_getContainer">getContainer()</a>
+    <span>
+                                &nbsp;: <abbr title="\Discord\Builders\Components\Container">Container</abbr>    </span>
+</dt>
+<dd>The container, for anything these helpers do not cover.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#method_links">links()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+<dd>This server&#039;s bridges, one row per link, each with its own Unlink
+button — the reason these panels are v2 and not embeds.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#method_new">new()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+<dd>Creates an empty panel.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#method_notice">notice()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+<dd>A panel that is one block of markdown.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#method_room">room()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+<dd>The panel for one room on another network: what the bot can see about
+it, and the things it can do to it from here.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#method_setAccentColor">setAccentColor()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+<dd>Recolours the container after the fact.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#method_success">success()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Builders-PanelBuilder.html#method_warning">warning()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+
+    </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Bridge-Builders-PanelBuilder.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ACCENT">
+        ACCENT
+        <a href="classes/Bridge-Builders-PanelBuilder.html#constant_ACCENT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A calm blue, for ordinary panels.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">ACCENT</span>
+    = <span class="phpdocumentor-signature__default-value">0x2aabee</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_DANGER">
+        DANGER
+        <a href="classes/Bridge-Builders-PanelBuilder.html#constant_DANGER" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">61</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">DANGER</span>
+    = <span class="phpdocumentor-signature__default-value">0xed4245</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_MAX_ROWS">
+        MAX_ROWS
+        <a href="classes/Bridge-Builders-PanelBuilder.html#constant_MAX_ROWS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">70</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Discord allows 40 components in one v2 message, and each row costs a
+Section plus its text and its button. Ten rows leaves ample room for the
+heading, the separator and the footer.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">MAX_ROWS</span>
+    = <span class="phpdocumentor-signature__default-value">10</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SUCCESS">
+        SUCCESS
+        <a href="classes/Bridge-Builders-PanelBuilder.html#constant_SUCCESS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">59</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SUCCESS</span>
+    = <span class="phpdocumentor-signature__default-value">0x57f287</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_WARNING">
+        WARNING
+        <a href="classes/Bridge-Builders-PanelBuilder.html#constant_WARNING" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">63</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">WARNING</span>
+    = <span class="phpdocumentor-signature__default-value">0xfee75c</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+            </section>
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Bridge-Builders-PanelBuilder.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_container">
+        $container
+        <a href="classes/Bridge-Builders-PanelBuilder.html#property_container" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The container every other component is added to.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type"><abbr title="\Discord\Builders\Components\Container">Container</abbr></span>
+    <span class="phpdocumentor-signature__name">$container</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Bridge-Builders-PanelBuilder.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_addActions">
+        addActions()
+        <a href="classes/Bridge-Builders-PanelBuilder.html#method_addActions" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">248</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Adds a row of buttons.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">addActions</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Builders\Components\Button">Button</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$buttons</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$buttons</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Builders\Components\Button">Button</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_addRow">
+        addRow()
+        <a href="classes/Bridge-Builders-PanelBuilder.html#method_addRow" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">236</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Adds a line of text with a button or thumbnail beside it — the only two
+things a Section accepts as an accessory.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">addRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdown</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Builders\Components\Button">Button</abbr>|<abbr title="\Discord\Builders\Components\Thumbnail">Thumbnail</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$accessory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$markdown</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$accessory</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Builders\Components\Button">Button</abbr>|<abbr title="\Discord\Builders\Components\Thumbnail">Thumbnail</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_addSeparator">
+        addSeparator()
+        <a href="classes/Bridge-Builders-PanelBuilder.html#method_addSeparator" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">225</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Adds a divider.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">addSeparator</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$divider</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$divider</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_addText">
+        addText()
+        <a href="classes/Bridge-Builders-PanelBuilder.html#method_addText" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">217</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Adds a block of markdown.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">addText</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdown</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$markdown</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_confirm">
+        confirm()
+        <a href="classes/Bridge-Builders-PanelBuilder.html#method_confirm" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">206</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A destructive action behind a second press.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">confirm</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdown</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$confirmCustomId</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$confirmLabel</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'Yes, do it'</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p><code class="prettyprint">reset</code> drops every bridge in the server, which is exactly the kind of
+thing somebody fires while meaning <code class="prettyprint">list</code>.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$markdown</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$confirmCustomId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$confirmLabel</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">'Yes, do it'</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_error">
+        error()
+        <a href="classes/Bridge-Builders-PanelBuilder.html#method_error" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">102</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">error</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdown</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$markdown</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getContainer">
+        getContainer()
+        <a href="classes/Bridge-Builders-PanelBuilder.html#method_getContainer" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">270</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The container, for anything these helpers do not cover.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getContainer</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Discord\Builders\Components\Container">Container</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Discord\Builders\Components\Container">Container</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_links">
+        links()
+        <a href="classes/Bridge-Builders-PanelBuilder.html#method_links" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">120</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">This server&#039;s bridges, one row per link, each with its own Unlink
+button — the reason these panels are v2 and not embeds.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">links</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;int, array{channel_id: string, target: string, title: ?string}&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rows</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connector</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'bridge'</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$rows</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, array{channel_id: string, target: string, title: ?string}&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$connector</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">'bridge'</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Named in the empty state, so the instruction it
+gives is one the reader can actually type.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_new">
+        new()
+        <a href="classes/Bridge-Builders-PanelBuilder.html#method_new" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">80</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Creates an empty panel.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">new</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$accent</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\self::ACCENT">self::ACCENT</abbr></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$accent</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><abbr title="\self::ACCENT">self::ACCENT</abbr></span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Container accent colour; one of the constants above.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_notice">
+        notice()
+        <a href="classes/Bridge-Builders-PanelBuilder.html#method_notice" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">92</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A panel that is one block of markdown.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">notice</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdown</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$accent</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\self::ACCENT">self::ACCENT</abbr></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$markdown</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$accent</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><abbr title="\self::ACCENT">self::ACCENT</abbr></span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_room">
+        room()
+        <a href="classes/Bridge-Builders-PanelBuilder.html#method_room" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">165</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The panel for one room on another network: what the bot can see about
+it, and the things it can do to it from here.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">room</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Room.html"><abbr title="\Bridge\Room">Room</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$room</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$linkedChannels</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>There is deliberately no thumbnail. On at least one network a room's
+photo is reachable only through a URL containing the bot token, and a
+panel is not the place to find that out — so the builder does not offer
+the option at all.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$room</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Room.html"><abbr title="\Bridge\Room">Room</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$linkedChannels</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;int, string&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Discord channels bridged to it, for the footer.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setAccentColor">
+        setAccentColor()
+        <a href="classes/Bridge-Builders-PanelBuilder.html#method_setAccentColor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">262</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Recolours the container after the fact.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setAccentColor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$accent</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$accent</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_success">
+        success()
+        <a href="classes/Bridge-Builders-PanelBuilder.html#method_success" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">97</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">success</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdown</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$markdown</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_warning">
+        warning()
+        <a href="classes/Bridge-Builders-PanelBuilder.html#method_warning" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php"><a href="files/discordphp-bridge-src-bridge-builders-panelbuilder.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Builders/PanelBuilder.php">PanelBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">107</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">warning</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdown</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$markdown</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
+</article>
+            </section>
+
+        
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Bridge-Builders-PanelBuilder.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/Bridge-Builders-PanelBuilder.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Bridge-Builders-PanelBuilder.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#constant_ACCENT">ACCENT</a></li>
+                                                    <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#constant_DANGER">DANGER</a></li>
+                                                    <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#constant_MAX_ROWS">MAX_ROWS</a></li>
+                                                    <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#constant_SUCCESS">SUCCESS</a></li>
+                                                    <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#constant_WARNING">WARNING</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#property_container">$container</a></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#method_addActions">addActions()</a></li>
+                                            <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#method_addRow">addRow()</a></li>
+                                            <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#method_addSeparator">addSeparator()</a></li>
+                                            <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#method_addText">addText()</a></li>
+                                            <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#method_confirm">confirm()</a></li>
+                                            <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#method_error">error()</a></li>
+                                            <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#method_getContainer">getContainer()</a></li>
+                                            <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#method_links">links()</a></li>
+                                            <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#method_new">new()</a></li>
+                                            <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#method_notice">notice()</a></li>
+                                            <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#method_room">room()</a></li>
+                                            <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#method_setAccentColor">setAccentColor()</a></li>
+                                            <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#method_success">success()</a></li>
+                                            <li class=""><a href="classes/Bridge-Builders-PanelBuilder.html#method_warning">warning()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="classes/Bridge-Builders-PanelBuilder.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

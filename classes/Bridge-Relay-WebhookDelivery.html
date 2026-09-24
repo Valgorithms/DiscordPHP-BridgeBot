@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>DiscordPHP-BridgeBot Documentation</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">DiscordPHP-BridgeBot Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/bridge.html" class="">Bridge</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bridge-actions.html" class="">Actions</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-builders.html" class="">Builders</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-capability.html" class="">Capability</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-helpers.html" class="">Helpers</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-message.html" class="">Message</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-modules.html" class="">Modules</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-relay.html" class="">Relay</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-support.html" class="">Support</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-telegram.html" class="">Telegram</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/bridge-twitch.html" class="">Twitch</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -packages">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/bridge.html">Bridge</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/bridge-relay.html">Relay</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    WebhookDelivery
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
+                            </ul>
+        </div>
+    
+    
+    </h2>
+
+<div class="phpdocumentor-label-line">
+
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
+
+
+</div>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+
+    </aside>
+
+            <p class="phpdocumentor-summary">Posts another network&#039;s chat into Discord.</p>
+
+
+    <section class="phpdocumentor-description"><p>Uses a webhook so each relayed line carries the speaker's own name and
+avatar instead of arriving as a wall of identical bot messages. That is not
+only cosmetic: webhook messages carry a <code class="prettyprint">webhook_id</code>, which is how the relay
+recognises its own output and refuses to send it back out again.</p>
+<p>Webhooks need <strong>Manage Webhooks</strong>. When that is missing — or creation fails
+for any other reason — delivery falls back to an ordinary bot message with
+the author's name inline, so a misconfigured server degrades to an uglier
+bridge rather than a silent one.</p>
+<h2>Staying inside Discord's budget</h2>
+<p>Two things here exist because of the rate limits rather than the feature:</p>
+<ul>
+<li><strong>Every send goes through <a href="classes/Bridge-Relay-OutboundPacer.html"><abbr title="\Bridge\Relay\OutboundPacer">OutboundPacer</abbr></a>.</strong> One message on a busy
+network fans out to every Discord channel following that room, and with
+more than one connector installed they all draw on one token's budget.</li>
+<li><strong>A channel we cannot create a webhook in is remembered.</strong> Without that
+memo, a server that never granted Manage Webhooks costs one rejected
+request <em>per relayed message</em> — and 10,000 rejections in ten minutes is a
+Cloudflare ban on the whole host, not a throttle.</li>
+</ul>
+<p>Nothing here builds an HTTP client. <code class="prettyprint">Webhook::execute()</code> and
+<code class="prettyprint">Channel::sendMessage()</code> both go through the one <code class="prettyprint">Discord\Http</code> the bot owns,
+which is where the per-route buckets live.</p>
+</section>
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">author</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>Valithor Obsidion <a href="mailto:valithor@discordphp.org">valithor@discordphp.org</a></p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+    
+    
+<h3 id="toc">
+    Table of Contents
+    <a href="classes/Bridge-Relay-WebhookDelivery.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h3>
+
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Bridge-Relay-WebhookDelivery.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#constant_USERNAME_LIMIT">USERNAME_LIMIT</a>
+    <span>
+        &nbsp;: mixed&nbsp;= 80                            </span>
+</dt>
+<dd>Discord rejects a webhook username longer than this.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#constant_VIA_BOT">VIA_BOT</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;bot&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#constant_VIA_WEBHOOK">VIA_WEBHOOK</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;webhook&#039;                            </span>
+</dt>
+<dd>How a delivered copy was posted, which decides how it can be edited.</dd>
+
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Bridge-Relay-WebhookDelivery.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#property_cache">$cache</a>
+    <span>
+                        &nbsp;: array&lt;string, <abbr title="\Discord\Parts\Channel\Webhook">Webhook</abbr>|false&gt;            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#property_discord">$discord</a>
+    <span>
+                        &nbsp;: <abbr title="\Discord\Discord">Discord</abbr>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#property_pacer">$pacer</a>
+    <span>
+                        &nbsp;: <a href="classes/Bridge-Relay-OutboundPacer.html"><abbr title="\Bridge\Relay\OutboundPacer">OutboundPacer</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#property_webhookName">$webhookName</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Bridge-Relay-WebhookDelivery.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#method_deliver">deliver()</a>
+    <span>
+                                &nbsp;: <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, array{message_id: string, via: string}&gt;    </span>
+</dt>
+<dd>Delivers one message to one Discord channel, and says where it landed.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#method_edit">edit()</a>
+    <span>
+                                &nbsp;: <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>    </span>
+</dt>
+<dd>Rewrites a copy this delivery posted, to what the original now says.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#method_forget">forget()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Forgets a channel&#039;s cached webhook — call when delivery starts failing.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#method_queued">queued()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>How many deliveries are waiting on Discord&#039;s budget.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#method_safeUsername">safeUsername()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Discord rejects webhook usernames containing &quot;discord&quot;, and caps them at
+80 characters. A display name from another network can be either, and the
+bridge should not drop a message over it.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#method_body">body()</a>
+    <span>
+                                &nbsp;: <abbr title="\Discord\Builders\MessageBuilder">MessageBuilder</abbr>    </span>
+</dt>
+<dd>The part of a message both paths share.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#method_create">create()</a>
+    <span>
+                                &nbsp;: <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, <abbr title="\Discord\Parts\Channel\Webhook">Webhook</abbr>&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#method_escape">escape()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Neutralises Discord markdown in a name shown in the fallback path.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#method_fallback">fallback()</a>
+    <span>
+                                &nbsp;: <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, array{message_id: string, via: string}&gt;    </span>
+</dt>
+<dd>An ordinary bot message, for a channel the bot cannot create a webhook
+in. Uglier — every line carries the bot&#039;s name and picture, so the
+author has to be written into the text — but never silent.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Bridge-Relay-WebhookDelivery.html#method_webhookFor">webhookFor()</a>
+    <span>
+                                &nbsp;: <abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, <abbr title="\Discord\Parts\Channel\Webhook">Webhook</abbr>&gt;    </span>
+</dt>
+
+    </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Bridge-Relay-WebhookDelivery.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_USERNAME_LIMIT">
+        USERNAME_LIMIT
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#constant_USERNAME_LIMIT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">60</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Discord rejects a webhook username longer than this.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">USERNAME_LIMIT</span>
+    = <span class="phpdocumentor-signature__default-value">80</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_VIA_BOT">
+        VIA_BOT
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#constant_VIA_BOT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">65</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">VIA_BOT</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;bot&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_VIA_WEBHOOK">
+        VIA_WEBHOOK
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#constant_VIA_WEBHOOK" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">63</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">How a delivered copy was posted, which decides how it can be edited.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">VIA_WEBHOOK</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;webhook&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+            </section>
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Bridge-Relay-WebhookDelivery.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_cache">
+        $cache
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#property_cache" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">array&lt;string, <abbr title="\Discord\Parts\Channel\Webhook">Webhook</abbr>|false&gt;</span>
+    <span class="phpdocumentor-signature__name">$cache</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+        <section class="phpdocumentor-description"><p>Channel id =&gt; webhook, or false when we know we can't have one.</p>
+</section>
+
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_discord">
+        $discord
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#property_discord" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">71</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><abbr title="\Discord\Discord">Discord</abbr></span>
+    <span class="phpdocumentor-signature__name">$discord</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_pacer">
+        $pacer
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#property_pacer" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">72</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Bridge-Relay-OutboundPacer.html"><abbr title="\Bridge\Relay\OutboundPacer">OutboundPacer</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$pacer</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_webhookName">
+        $webhookName
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#property_webhookName" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$webhookName</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;Bridge&#039;</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Bridge-Relay-WebhookDelivery.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">70</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Discord">Discord</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$discord</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><a href="classes/Bridge-Relay-OutboundPacer.html"><abbr title="\Bridge\Relay\OutboundPacer">OutboundPacer</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pacer</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$webhookName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'Bridge'</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$discord</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Discord">Discord</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$pacer</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Bridge-Relay-OutboundPacer.html"><abbr title="\Bridge\Relay\OutboundPacer">OutboundPacer</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$webhookName</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">'Bridge'</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_deliver">
+        deliver()
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#method_deliver" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">96</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Delivers one message to one Discord channel, and says where it landed.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">deliver</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Parts\Channel\Channel">Channel</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$channel</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$author</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$avatarUrl</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$suffix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">''</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array{filename: string, content: string}|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, array{message_id: string, via: string}&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p><code class="prettyprint">allowed_mentions</code> is empty on every path: this text came from another
+network and is untrusted, and somebody typing <code class="prettyprint">@everyone</code> there must not
+ping a Discord server. Neutering it at the API rather than by mangling
+the text means they still read as having typed it.</p>
+<p>The webhook is executed with <code class="prettyprint">wait</code>, so Discord answers with the message
+it created. That id is what lets a later edit on the other network find
+this copy; without it every edit would have to be posted as a second
+message.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$channel</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Parts\Channel\Channel">Channel</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$author</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$text</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$avatarUrl</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$suffix</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">''</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Appended to the display name, so it is
+obvious a relayed line is not a Discord account.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$file</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array{filename: string, content: string}|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A file to upload with it.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, array{message_id: string, via: string}&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_edit">
+        edit()
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#method_edit" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">131</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Rewrites a copy this delivery posted, to what the original now says.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">edit</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Parts\Channel\Channel">Channel</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$channel</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$messageId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$via</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$author</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$suffix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">''</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>A webhook message is edited through the webhook that posted it; a
+fallback message through the bot, which authored it. Either way it goes
+through the pacer, because an edit spends the same channel's budget as a
+send.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$channel</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Parts\Channel\Channel">Channel</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$messageId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$via</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$author</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$text</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$suffix</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">''</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_forget">
+        forget()
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#method_forget" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">174</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Forgets a channel&#039;s cached webhook — call when delivery starts failing.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">forget</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Parts\Channel\Channel">Channel</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$channel</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$channel</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Parts\Channel\Channel">Channel</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_queued">
+        queued()
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#method_queued" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">180</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">How many deliveries are waiting on Discord&#039;s budget.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">queued</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_safeUsername">
+        safeUsername()
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#method_safeUsername" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">262</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Discord rejects webhook usernames containing &quot;discord&quot;, and caps them at
+80 characters. A display name from another network can be either, and the
+bridge should not drop a message over it.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">safeUsername</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$author</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$suffix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">''</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$author</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$suffix</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">''</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_body">
+        body()
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#method_body" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">158</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The part of a message both paths share.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">body</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array{filename: string, content: string}|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Discord\Builders\MessageBuilder">MessageBuilder</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$text</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$file</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array{filename: string, content: string}|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Discord\Builders\MessageBuilder">MessageBuilder</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_create">
+        create()
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#method_create" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">216</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Parts\Channel\Channel">Channel</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$channel</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, <abbr title="\Discord\Parts\Channel\Webhook">Webhook</abbr>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$channel</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Parts\Channel\Channel">Channel</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, <abbr title="\Discord\Parts\Channel\Webhook">Webhook</abbr>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_escape">
+        escape()
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#method_escape" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">276</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Neutralises Discord markdown in a name shown in the fallback path.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">escape</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$text</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fallback">
+        fallback()
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#method_fallback" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">248</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">An ordinary bot message, for a channel the bot cannot create a webhook
+in. Uglier — every line carries the bot&#039;s name and picture, so the
+author has to be written into the text — but never silent.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">fallback</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Parts\Channel\Channel">Channel</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$channel</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$author</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$suffix</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array{filename: string, content: string}|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, array{message_id: string, via: string}&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$channel</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Parts\Channel\Channel">Channel</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$author</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$text</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$suffix</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$file</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array{filename: string, content: string}|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, array{message_id: string, via: string}&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_webhookFor">
+        webhookFor()
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#method_webhookFor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php"><a href="files/discordphp-bridge-src-bridge-relay-webhookdelivery.html"><abbr title="DiscordPHP-Bridge/src/Bridge/Relay/WebhookDelivery.php">WebhookDelivery.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">186</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">webhookFor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Discord\Parts\Channel\Channel">Channel</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$channel</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, <abbr title="\Discord\Parts\Channel\Webhook">Webhook</abbr>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$channel</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Discord\Parts\Channel\Channel">Channel</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\React\Promise\PromiseInterface">PromiseInterface</abbr>&lt;string|int, <abbr title="\Discord\Parts\Channel\Webhook">Webhook</abbr>&gt;</span>
+            </section>
+
+</article>
+            </section>
+
+        
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Bridge-Relay-WebhookDelivery.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/Bridge-Relay-WebhookDelivery.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Bridge-Relay-WebhookDelivery.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#constant_USERNAME_LIMIT">USERNAME_LIMIT</a></li>
+                                                    <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#constant_VIA_BOT">VIA_BOT</a></li>
+                                                    <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#constant_VIA_WEBHOOK">VIA_WEBHOOK</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#property_cache">$cache</a></li>
+                                                    <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#property_discord">$discord</a></li>
+                                                    <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#property_pacer">$pacer</a></li>
+                                                    <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#property_webhookName">$webhookName</a></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#method_deliver">deliver()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#method_edit">edit()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#method_forget">forget()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#method_queued">queued()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#method_safeUsername">safeUsername()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#method_body">body()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#method_create">create()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#method_escape">escape()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#method_fallback">fallback()</a></li>
+                                            <li class=""><a href="classes/Bridge-Relay-WebhookDelivery.html#method_webhookFor">webhookFor()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="classes/Bridge-Relay-WebhookDelivery.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>
