@@ -2,8 +2,9 @@
 
 **Scope:** the bridge as deployed from this repository — the core
 (`vzgcoders/discordphp-bridge`, DiscordPHP-Bridge), the Twitch connector
-(DiscordPHP-TwitchBot, branch `bridge`), the Telegram connector
-(DiscordPHP-TelegramRelay, branch `bridge`) and this app.
+(DiscordPHP-Bridge-Twitch, then named DiscordPHP-TwitchBot, branch `bridge`),
+the Telegram connector (DiscordPHP-Bridge-Telegram, then named
+DiscordPHP-TelegramRelay, branch `bridge`) and this app.
 **Date:** 2026-09-23.
 **Focus:** who can make the bot do what — in particular, anyone who can reach
 an admin-level command they were not meant to.
@@ -227,7 +228,7 @@ channel in the interaction's resolved data.
 
 ### S6 — Tokens and code are writable by other local accounts · Medium
 
-`D:\GitHub\DiscordPHP-BridgeBot` and `D:\GitHub\DiscordPHP-TwitchBot` inherit
+`D:\GitHub\DiscordPHP-BridgeBot` and `D:\GitHub\DiscordPHP-Bridge-Twitch` inherit
 **Modify** for `NT AUTHORITY\Authenticated Users` and for
 `Valithor-Aurora\CodexSandboxUsers` from the root of `D:\`. Any local account
 can therefore read the `.env` files (Discord, Twitch and Telegram tokens) and

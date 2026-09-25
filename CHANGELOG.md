@@ -10,6 +10,14 @@ one bot now, built from three packages: the platform-agnostic core
 ([`vzgcoders/discordphp-bridge`](https://github.com/discord-php/DiscordPHP-Bridge))
 and a connector each for Twitch and Telegram. DiscordPHP-TwitchRelay is retired.
 
+The old bots' repositories now hold those connectors, so they are renamed to
+match their packages: DiscordPHP-TwitchBot is
+[DiscordPHP-Bridge-Twitch](https://github.com/Valgorithms/DiscordPHP-Bridge-Twitch)
+and DiscordPHP-TelegramRelay is
+[DiscordPHP-Bridge-Telegram](https://github.com/Valgorithms/DiscordPHP-Bridge-Telegram).
+Sibling checkouts go under the new names: `composer.json` looks for
+`../DiscordPHP-Bridge-Twitch` and `../DiscordPHP-Bridge-Telegram`.
+
 ### Added
 
 - A two-way relay between a Discord channel and a Twitch channel, a Telegram

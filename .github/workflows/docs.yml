@@ -27,8 +27,8 @@ jobs:
       - name: Fetch the bridge packages
         run: |
           git clone --depth 1 https://github.com/discord-php/DiscordPHP-Bridge.git ../DiscordPHP-Bridge
-          git clone --depth 1 https://github.com/Valgorithms/DiscordPHP-TwitchBot.git ../DiscordPHP-TwitchBot
-          git clone --depth 1 https://github.com/Valgorithms/DiscordPHP-TelegramRelay.git ../DiscordPHP-TelegramRelay
+          git clone --depth 1 https://github.com/Valgorithms/DiscordPHP-Bridge-Twitch.git ../DiscordPHP-Bridge-Twitch
+          git clone --depth 1 https://github.com/Valgorithms/DiscordPHP-Bridge-Telegram.git ../DiscordPHP-Bridge-Telegram
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2

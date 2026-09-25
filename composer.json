@@ -49,14 +49,14 @@
         },
         {
             "type": "path",
-            "url": "../DiscordPHP-TwitchBot",
+            "url": "../DiscordPHP-Bridge-Twitch",
             "options": {
                 "symlink": true
             }
         },
         {
             "type": "path",
-            "url": "../DiscordPHP-TelegramRelay",
+            "url": "../DiscordPHP-Bridge-Telegram",
             "options": {
                 "symlink": true
             }

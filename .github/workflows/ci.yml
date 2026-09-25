@@ -37,8 +37,8 @@ jobs:
         run: |
           for repo in \
             discord-php/DiscordPHP-Bridge \
-            Valgorithms/DiscordPHP-TwitchBot \
-            Valgorithms/DiscordPHP-TelegramRelay \
+            Valgorithms/DiscordPHP-Bridge-Twitch \
+            Valgorithms/DiscordPHP-Bridge-Telegram \
             Valgorithms/TwitchPHP \
             Valgorithms/TwitchPHP-Http \
             Valgorithms/TelegramPHP

@@ -16,8 +16,8 @@ bridges live in. Everything it does comes from three packages:
 | | |
 | --- | --- |
 | [`vzgcoders/discordphp-bridge`](https://github.com/discord-php/DiscordPHP-Bridge) | routing, persistence, the command catalogue, Components v2, rate limiting |
-| [`vzgcoders/discordphp-bridge-twitch`](https://github.com/Valgorithms/DiscordPHP-TwitchBot) | IRC, the whole Helix API, device-code recovery |
-| [`vzgcoders/discordphp-bridge-telegram`](https://github.com/Valgorithms/DiscordPHP-TelegramRelay) | the long poll, edits, media, panels |
+| [`vzgcoders/discordphp-bridge-twitch`](https://github.com/Valgorithms/DiscordPHP-Bridge-Twitch) | IRC, the whole Helix API, device-code recovery |
+| [`vzgcoders/discordphp-bridge-telegram`](https://github.com/Valgorithms/DiscordPHP-Bridge-Telegram) | the long poll, edits, media, panels |
 
 The class reference for all three is at
 <https://valgorithms.github.io/DiscordPHP-BridgeBot/>.
@@ -152,8 +152,9 @@ picked at startup.
 ## Upgrading from DiscordPHP-TwitchBot or DiscordPHP-TelegramRelay
 
 **Your bridges survive.** A `storage/bridges.json` or `var/relay.json` written by
-either old bot is migrated on load into the connector-keyed shape, so copy it to
-`storage/bridges.json` and nothing needs re-running:
+either old bot is migrated on load into the connector-keyed shape, so copy it
+from the old bot's checkout to `storage/bridges.json` and nothing needs
+re-running:
 
 ```bash
 cp ../DiscordPHP-TwitchBot/storage/bridges.json storage/bridges.json

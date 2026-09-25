@@ -18,8 +18,8 @@
         <api>
             <source dsn="..">
                 <path>DiscordPHP-Bridge/src</path>
-                <path>DiscordPHP-TwitchBot/src</path>
-                <path>DiscordPHP-TelegramRelay/src</path>
+                <path>DiscordPHP-Bridge-Twitch/src</path>
+                <path>DiscordPHP-Bridge-Telegram/src</path>
             </source>
             <output>reference</output>
         </api>
