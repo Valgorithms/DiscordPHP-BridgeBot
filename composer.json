@@ -28,7 +28,7 @@
     },
     "require": {
         "php": "^8.4",
-        "discord-php/http": "dev-master as 10.1.7",
+        "discord-php/http": "dev-master as 10.9.8",
         "monolog/monolog": "^3.0",
         "vzgcoders/discordphp-bridge": "@dev",
         "vzgcoders/discordphp-bridge-telegram": "@dev",
