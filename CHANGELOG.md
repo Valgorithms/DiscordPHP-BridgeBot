@@ -35,5 +35,8 @@ Sibling checkouts go under the new names: `composer.json` looks for
   never says it closed, reconnects by itself. Messages from Discord wait for it
   meanwhile. When it will not come back, the owner gets a DM with a
   **Reconnect now** button, and the DM says so once chat is back.
+- A post in each bridged Discord channel when its Twitch channel goes live,
+  with the title and game, and another when the stream ends, with how long it
+  ran. A restart mid-stream or a brief encoder drop does not announce it twice.
 - `SECURITY-REVIEW.md`: who can do what, and what is still open.
 - CI on Linux and Windows, and a class reference published to GitHub Pages.
