@@ -31,5 +31,9 @@ Sibling checkouts go under the new names: `composer.json` looks for
 - Private installation through a custom install page, and a startup check that
   says when the Discord application is set up otherwise.
 - A startup check of every restored bridge, reported in the log and by DM.
+- Twitch chat that drops, including a connection lost to a network blip that
+  never says it closed, reconnects by itself. Messages from Discord wait for it
+  meanwhile. When it will not come back, the owner gets a DM with a
+  **Reconnect now** button, and the DM says so once chat is back.
 - `SECURITY-REVIEW.md`: who can do what, and what is still open.
 - CI on Linux and Windows, and a class reference published to GitHub Pages.
