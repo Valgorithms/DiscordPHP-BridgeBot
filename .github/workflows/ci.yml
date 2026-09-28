@@ -39,9 +39,11 @@ jobs:
             discord-php/DiscordPHP-Bridge \
             Valgorithms/DiscordPHP-Bridge-Twitch \
             Valgorithms/DiscordPHP-Bridge-Telegram \
+            Valgorithms/DiscordPHP-Bridge-YouTube \
             Valgorithms/TwitchPHP \
             Valgorithms/TwitchPHP-Http \
-            Valgorithms/TelegramPHP
+            Valgorithms/TelegramPHP \
+            Valgorithms/YoutubePHP
           do
             git clone --depth 1 "https://github.com/$repo.git" "../${repo#*/}"
           done

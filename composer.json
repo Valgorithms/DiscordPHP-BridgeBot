@@ -1,10 +1,11 @@
 {
     "name": "vzgcoders/discordphp-bridgebot",
-    "description": "One Discord bot bridging Twitch and Telegram: a two-way chat relay for each, and one command catalogue reachable from all of them.",
+    "description": "One Discord bot bridging Twitch, Telegram and YouTube: a chat relay for each, and one command catalogue reachable from all of them.",
     "keywords": [
         "discord",
         "twitch",
         "telegram",
+        "youtube",
         "chat",
         "relay",
         "bridge",
@@ -32,7 +33,8 @@
         "monolog/monolog": "^3.0",
         "vzgcoders/discordphp-bridge": "@dev",
         "vzgcoders/discordphp-bridge-telegram": "@dev",
-        "vzgcoders/discordphp-bridge-twitch": "@dev"
+        "vzgcoders/discordphp-bridge-twitch": "@dev",
+        "vzgcoders/discordphp-bridge-youtube": "@dev"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.64",
@@ -63,6 +65,13 @@
         },
         {
             "type": "path",
+            "url": "../DiscordPHP-Bridge-YouTube",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "../TwitchPHP",
             "options": {
                 "symlink": true
@@ -78,6 +87,13 @@
         {
             "type": "path",
             "url": "../TelegramPHP",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../YoutubePHP",
             "options": {
                 "symlink": true
             }

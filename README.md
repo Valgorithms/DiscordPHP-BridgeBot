@@ -1,25 +1,27 @@
 # DiscordPHP-BridgeBot
 
-One Discord bot bridging Twitch and Telegram: a two-way chat relay for each, and
-one command catalogue reachable from all of them.
+One Discord bot bridging Twitch, Telegram and YouTube: a chat relay for each,
+and one command catalogue reachable from all of them.
 
 ```
                  ┌──────────►  twitch.tv/twitchdev
-#general  ───────┤             ◄──────────
-                 └──────────►  t.me/mygroup
-                               ◄──────────
+                 │             ◄──────────
+#general  ───────┼──────────►  t.me/mygroup
+                 │             ◄──────────
+                 └             ◄──────────  youtube.com/@yourchannel (live chat)
 ```
 
 This repository is the application — `bot.php`, the `.env`, and the file the
-bridges live in. Everything it does comes from three packages:
+bridges live in. Everything it does comes from four packages:
 
 | | |
 | --- | --- |
 | [`vzgcoders/discordphp-bridge`](https://github.com/discord-php/DiscordPHP-Bridge) | routing, persistence, the command catalogue, Components v2, rate limiting |
 | [`vzgcoders/discordphp-bridge-twitch`](https://github.com/Valgorithms/DiscordPHP-Bridge-Twitch) | IRC, the whole Helix API, device-code recovery |
 | [`vzgcoders/discordphp-bridge-telegram`](https://github.com/Valgorithms/DiscordPHP-Bridge-Telegram) | the long poll, edits, media, panels |
+| [`vzgcoders/discordphp-bridge-youtube`](https://github.com/Valgorithms/DiscordPHP-Bridge-YouTube) | live chat into Discord, go-live announcements, the daily quota |
 
-The class reference for all three is at
+The class reference for all four is at
 <https://valgorithms.github.io/DiscordPHP-BridgeBot/>.
 
 ## Setup
@@ -31,7 +33,7 @@ php bot.php
 ```
 
 There is a start-to-finish walkthrough in [example.md](example.md) — the first
-run, both bridges, and what each failure actually looks like.
+run, the Twitch and Telegram bridges, and what each failure actually looks like.
 
 A connector is installed **only when its credentials are in `.env`**, so filling
 in one section and leaving the other empty is a supported way to run: the bot
@@ -49,6 +51,31 @@ a reason nothing tells you:
 - **Turn Telegram's privacy mode off** (`@BotFather` → `/setprivacy` → Disable).
   With it on, the bot only sees messages addressed to it, so a Telegram group
   relays almost nothing.
+- **Publish the Google OAuth consent screen.** While it is in *Testing*, Google
+  signs the bot out of YouTube every seven days. The bot DMs you when that is
+  the case, but nothing else stops working until the day it happens.
+
+### YouTube
+
+YouTube is bridged one way: the stream's live chat comes into Discord, and
+Discord does not go out to YouTube. Every message posted to YouTube chat costs
+50 of the Google project's 10,000 daily quota units, so relaying a Discord
+channel there would spend the day's quota within an hour. The bot posts in
+YouTube chat only to answer commands, and when you use `/youtube say`.
+
+It bridges the channel it is signed in as, which is YouTube's rule: the API
+reads the live chat of the signed-in account's own broadcasts. What you need:
+
+1. A Google Cloud project with the **YouTube Data API v3** enabled, and its
+   OAuth consent screen published.
+2. An OAuth client of type **TVs and Limited Input devices**. Its id and secret
+   go in `.env` as `YOUTUBE_CLIENT_ID` and `YOUTUBE_CLIENT_SECRET`.
+3. On the first start, the bot DMs you a code for `google.com/device`. Enter it
+   signed in as the account that streams. The bot keeps the sign-in in `.env`.
+4. `/youtube link target:me channel:#stream-chat`.
+
+The [connector's README](https://github.com/Valgorithms/DiscordPHP-Bridge-YouTube)
+has the other settings, and what each part costs in quota.
 
 ## Installing it
 
@@ -111,10 +138,15 @@ Everything is qualified by the network it belongs to — always, on every surfac
 /telegram link | here | unlink | list | status | reset      the bridge (admin)
           chat     send | photo | poll | info | pin | unpin
           mod      ban | unban
+
+/youtube  link | here | unlink | list | status | reset      the bridge (admin)
+          quota | say
+          mod      ban | timeout | unban | delete
 ```
 
-Each of those works four ways: as a Discord slash command, as a Discord prefix
-command, in Twitch chat, and in Telegram chat. `!twitch title Back in ten` typed
+Each of those works as a Discord slash command, as a Discord prefix command, in
+Twitch chat, in Telegram chat, and in YouTube chat, where by default only
+moderators get answers because every answer costs quota. `!twitch title Back in ten` typed
 in a Telegram group sets the stream title — which is the point of one bot rather
 than two. The chat half is one dispatcher in the core, so rank, cooldowns and
 "which room did you mean" behave the same in every chat; a command typed in one
@@ -123,7 +155,8 @@ refuses to guess when there is more than one.
 
 The relay is the same: a Discord channel bridged to a Twitch channel *and* a
 Telegram group is one three-way conversation, with each network's messages
-carried straight to the other.
+carried straight to the other. YouTube chat joins that conversation too, but
+nothing is sent back into it.
 
 A chat can drop the group but never the qualifier: `!twitch title` (the long
 `!twitch channel title` works too), and never a bare `!title`. That is deliberate. A name
@@ -184,7 +217,8 @@ binary is decompilable and would carry whatever is in `.env` at build time.
 
 Read [SECURITY-REVIEW.md](SECURITY-REVIEW.md) before adding the bot to a
 server you don't run. In short: whoever can run `link` in any server the bot is
-in can reach any Twitch channel or Telegram chat the bot can reach. So turn off
+in can reach any Twitch channel or Telegram chat the bot can reach, and the
+YouTube channel it is signed in as. So turn off
 **Public Bot** in the Discord developer portal, and only add the bot where you
 trust the admins.
 

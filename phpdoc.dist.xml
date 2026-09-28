@@ -11,7 +11,7 @@
     </paths>
     <version number="latest">
         <!--
-            The application itself is bot.php. What it runs is the three bridge
+            The application itself is bot.php. What it runs is the four bridge
             packages, read from their sibling checkouts: the same ../ that the
             path repositories in composer.json use, locally and in CI.
         -->
@@ -20,6 +20,7 @@
                 <path>DiscordPHP-Bridge/src</path>
                 <path>DiscordPHP-Bridge-Twitch/src</path>
                 <path>DiscordPHP-Bridge-Telegram/src</path>
+                <path>DiscordPHP-Bridge-YouTube/src</path>
             </source>
             <output>reference</output>
         </api>

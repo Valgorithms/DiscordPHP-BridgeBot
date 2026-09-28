@@ -21,6 +21,8 @@ use Bridge\Telegram\TelegramConfig;
 use Bridge\Telegram\TelegramConnector;
 use Bridge\Twitch\TwitchConfig;
 use Bridge\Twitch\TwitchConnector;
+use Bridge\YouTube\YouTubeConfig;
+use Bridge\YouTube\YouTubeConnector;
 use Monolog\Formatter\LineFormatter;
 use Monolog\Handler\StreamHandler;
 use Monolog\Level;
@@ -119,6 +121,12 @@ if (TelegramConfig::isConfigured($environment)) {
     $bot->addConnector(new TelegramConnector(TelegramConfig::fromEnvironment($environment)));
 } else {
     $logger->info('[bridge] no Telegram token — skipping that connector');
+}
+
+if (YouTubeConfig::isConfigured($environment)) {
+    $bot->addConnector(new YouTubeConnector(YouTubeConfig::fromEnvironment($environment)));
+} else {
+    $logger->info('[bridge] no YouTube client — skipping that connector');
 }
 
 if ($bot->connectors() === []) {
