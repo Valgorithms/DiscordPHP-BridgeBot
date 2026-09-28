@@ -36,6 +36,7 @@ repository until the open items are resolved or accepted.
 | S11 | Low | A demoted Telegram admin keeps their rank for up to a minute | Accepted |
 | S12 | Low | Mentioning a private Discord channel reveals its name to the other network | Open |
 | S13 | Bug | The **Unlink** button on the `list` panel has no handler | Open |
+| S14 | **High** | Any server with the bot can bridge the signed-in YouTube channel, and its Discord moderators can moderate that channel's live chat | Open: needs a decision |
 | F1 | **High** | `target=` on a prefix command reached *any* room the bot can reach | **Fixed** `f3e75e3`, `03ab92e` |
 | F2 | Medium | A Discord nickname could trigger other Twitch bots' commands with moderator authority | **Fixed** `97cadd6` |
 | F3 | Medium | Commands from Twitch Shared Chat partners ran in this channel | **Fixed** `97cadd6` |
@@ -306,6 +307,30 @@ registered for it, and its id doesn't say which network it's for. Pressing it
 makes Discord report that the interaction failed. It is harmless, but when it
 is implemented the handler must re-check the Administrator rung and the
 server, the way `BridgeActions::confirmed()` does for `reset`.
+
+### S14 — Any linked server can moderate the signed-in YouTube channel · High
+
+*Added 2026-09-27, with the YouTube connector (DiscordPHP-Bridge-YouTube).*
+
+The YouTube connector bridges only the channel the bot is signed in as, so
+S1's "any room" does not reach other people's YouTube channels. It does reach
+yours, from every server the bot is in:
+
+- `/youtube link target:me` in any such server bridges your channel there, and
+  that server then receives your live chat.
+- Its members with Manage Messages can run `/youtube mod ban`, `timeout`,
+  `unban` and `delete` against your live chat (S3). Each costs 50 of the day's
+  quota units, so doing it repeatedly also spends the quota the chat relay
+  needs.
+- `say` is operator-only, and in YouTube chat commands are answered only for
+  YouTube's own moderators by default, so neither is a way in.
+
+As with S8, the device sign-in adopts whichever Google account enters the
+code, and the bot then bridges that account's channel.
+
+**Options:** those of S1 and S3. Specific to YouTube, `link` could be
+operator-only outright: it can only ever mean your own channel, so no server
+admin needs it.
 
 ### Not a vulnerability, but say it out loud
 
