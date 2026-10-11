@@ -17,12 +17,14 @@ use Bridge\Environment;
 use Bridge\Store;
 use Bridge\Support\Filesystem;
 use Bridge\Support\GatewayDiagnostics;
+use Bridge\Support\JsonFile;
 use Bridge\Telegram\TelegramConfig;
 use Bridge\Telegram\TelegramConnector;
 use Bridge\Twitch\TwitchConfig;
 use Bridge\Twitch\TwitchConnector;
 use Bridge\YouTube\YouTubeConfig;
 use Bridge\YouTube\YouTubeConnector;
+use BridgeBot\Integration\NewsletterFeed;
 use Monolog\Formatter\LineFormatter;
 use Monolog\Handler\StreamHandler;
 use Monolog\Level;
@@ -45,6 +47,7 @@ while (! is_file($baseDir . '/vendor/autoload.php')) {
 }
 
 require $baseDir . '/vendor/autoload.php';
+require_once $baseDir . '/integration/NewsletterFeed.php';
 
 // One environment for the whole process. Every connector reads its own settings
 // out of it, so the file is parsed once and nothing disagrees about precedence.
@@ -127,6 +130,24 @@ if (YouTubeConfig::isConfigured($environment)) {
     $bot->addConnector(new YouTubeConnector(YouTubeConfig::fromEnvironment($environment)));
 } else {
     $logger->info('[bridge] no YouTube client — skipping that connector');
+}
+
+// Disabled unless the operator explicitly names both their accounts and public rooms.
+if ($feedPath = $environment->get('NEWSLETTER_BRIDGE_FEED')) {
+    try {
+        $authors = NewsletterFeed::policy($environment->require('NEWSLETTER_BRIDGE_AUTHOR_IDS'));
+        $rooms = NewsletterFeed::policy($environment->require('NEWSLETTER_BRIDGE_PUBLIC_ROOMS'));
+        $feedFile = new JsonFile($feedPath, Filesystem::create());
+        $saved = $feedFile->load();
+        $feed = new NewsletterFeed($authors, $rooms, static fn (array $data) => $feedFile->save($data)->then(null, static function () use ($logger): void {
+            $logger->warning('[newsletter] could not save the Bridge feed; coverage may be incomplete');
+        }), (array) ($saved['messages'] ?? []));
+        $bot->addModule($feed);
+        register_shutdown_function(static fn () => $feedFile->flush());
+        $logger->info('[newsletter] public-room owner feed enabled; no historical chat backfill');
+    } catch (Throwable) {
+        $logger->warning('[newsletter] feed disabled: check its path and explicit account/public-room policy');
+    }
 }
 
 if ($bot->connectors() === []) {

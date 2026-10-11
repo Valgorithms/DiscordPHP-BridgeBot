@@ -3,7 +3,7 @@
 // The application is one entrypoint and its tests; there is no src/ here,
 // because everything it does lives in the packages it requires.
 $finder = PhpCsFixer\Finder::create()
-    ->in(__DIR__ . '/tests')
+    ->in([__DIR__ . '/tests', __DIR__ . '/integration'])
     ->append([__DIR__ . '/bot.php']);
 
 return (new PhpCsFixer\Config())

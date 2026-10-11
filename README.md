@@ -225,3 +225,26 @@ trust the admins.
 ## Licence
 
 MIT.
+
+## Optional local Newsletter export
+
+`NEWSLETTER_BRIDGE_FEED` enables an owner-only JSON snapshot for DiscordPHP-Newsletter.
+Set an absolute path and both `NEWSLETTER_BRIDGE_AUTHOR_IDS` and
+`NEWSLETTER_BRIDGE_PUBLIC_ROOMS` JSON objects (see `.env.example`). Keys are connector
+names, values are arrays of string IDs. Account IDs are the platform's immutable IDs,
+not display names or handles. Rooms must be explicitly approved **public** rooms using
+connector-normalized targets. An allowlist entry does not prove a room is public; the
+operator must check it. Leave all settings empty to disable recording. Restart both bots
+after configuring their shared local path. No history scraping or publication occurs.
+
+The module registers additional incoming listeners without changing relay handlers.
+Only the owner's text is exported, capped at 600 characters; no quotes, media, profile
+URLs, credentials or other authors' text. Leading `!` and `/` commands are excluded.
+It suppresses unchanged duplicate deliveries, replaces edits, and honors deletion/purge
+notices received from connectors. Unsupported deletion notifications cannot be inferred.
+The snapshot retains at most 500 messages and 14 days, reapplies current policy on restart,
+and writes a heartbeat every five minutes through the existing atomic JSON persistence.
+Restart/capacity gaps remain visible to the consumer; source timestamps mean observed
+time, not original-send time. A recorded plan is not evidence of finished development.
+Shutdown flushes queued writes; forced process termination can lose pending observations.
+Persisted Newsletter editions/public posts are not retroactively erased by feed deletions.
