@@ -21,7 +21,7 @@ final class NewsletterFeedTest extends TestCase
         $feed->record('telegram', new Incoming('public', 'Owner', null, 'anonymous', '3'));
         $feed->record('telegram', new Incoming('public', 'Owner', 'owner', '!api token', '4'));
         $feed->record('telegram', new Incoming('public', 'Owner', 'owner', 'bot echo', '5', own: true));
-        $feed->record('telegram', new Incoming('public', 'Owner', 'owner', 'Working on the cache.', '6', quoted: 'someone else: secret', profileUrl: 'https://example.com/owner'));
+        $feed->record('telegram', new Incoming('public', 'Owner', 'owner', 'Working on the cache.', '6', quoted: 'someone else: secret'));
 
         self::assertCount(1, $snapshot['messages']);
         self::assertSame('Working on the cache.', $snapshot['messages'][0]['text']);
