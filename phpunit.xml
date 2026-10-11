@@ -19,6 +19,7 @@
     <source ignoreIndirectDeprecations="true">
         <include>
             <file>bot.php</file>
+            <directory>integration</directory>
             <directory>tests</directory>
         </include>
     </source>
