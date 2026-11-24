@@ -28,6 +28,8 @@ use Bridge\Telegram\TelegramConfig;
 use Bridge\Telegram\TelegramConnector;
 use Bridge\Twitch\TwitchConfig;
 use Bridge\Twitch\TwitchConnector;
+use Bridge\YouTube\YouTubeConfig;
+use Bridge\YouTube\YouTubeConnector;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use React\EventLoop\StreamSelectLoop;
@@ -191,6 +193,56 @@ final class WiringTest extends TestCase
 
         array_map('unlink', glob($dir . '/*') ?: []);
         @rmdir($dir);
+    }
+
+    public function testWindowsConnectorBootReusesResolvedDns(): void
+    {
+        if (PHP_OS_FAMILY !== 'Windows') {
+            self::markTestSkipped('Regression covers the Windows ReactPHP resolver path.');
+        }
+
+        $dir = sys_get_temp_dir() . '/bridgebot-' . bin2hex(random_bytes(6));
+        mkdir($dir);
+        $caFile = $dir . '/ca.pem';
+        touch($caFile);
+        $environment = Environment::fromArray([
+            'DISCORD_TOKEN' => 'test.token.here',
+            'TWITCH_CLIENT_ID' => 'cid',
+            'TWITCH_NICK' => 'bot',
+            'TELEGRAM_TOKEN' => '123:abc',
+            'TELEGRAM_CA_BUNDLE' => $caFile,
+            'YOUTUBE_CLIENT_ID' => 'cid',
+            'YOUTUBE_CLIENT_SECRET' => 'secret',
+        ], $dir . '/.env');
+
+        try {
+            $config = Config::fromEnvironment($environment, $dir . '/bridges.json');
+            $bot = new Bot($config, new Store($config->storePath, Filesystem::blocking()), [
+                'logger' => new NullLogger(),
+                'loop' => new StreamSelectLoop(),
+                'socket_options' => ['dns' => '192.0.2.53'],
+            ]);
+            self::assertSame(['dns' => '192.0.2.53'], $bot->windowsDnsSocketOptions());
+
+            $twitch = new TwitchConnector(TwitchConfig::fromEnvironment($environment));
+            $telegramConfig = TelegramConfig::fromEnvironment($environment);
+            $telegram = new TelegramConnector($telegramConfig);
+            $youtube = new YouTubeConnector(YouTubeConfig::fromEnvironment($environment));
+            $bot->addConnector($twitch)->addConnector($telegram)->addConnector($youtube);
+
+            self::assertSame('192.0.2.53', $twitch->getTwitch()->getSocketOptions()['dns']);
+            self::assertSame(
+                ['tls' => ['cafile' => $caFile], 'dns' => '192.0.2.53'],
+                (new \ReflectionProperty($telegram->getTelegram(), 'options'))->getValue($telegram->getTelegram())['socket_options'],
+            );
+            self::assertSame(
+                ['dns' => '192.0.2.53'],
+                (new \ReflectionProperty($youtube->getYouTube(), 'options'))->getValue($youtube->getYouTube())['socket_options'],
+            );
+        } finally {
+            array_map('unlink', glob($dir . '/*') ?: []);
+            rmdir($dir);
+        }
     }
 
     /** @return array<string, Connector> */
